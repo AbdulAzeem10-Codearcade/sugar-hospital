@@ -11,16 +11,16 @@ import { Search, Calendar, Phone, Star } from 'lucide-react'
 const doctors = [
   { id: 1, name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', experience: '15+ years', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500' },
   { id: 2, name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', experience: '12+ years', rating: 4.8, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500' },
-  { id: 3, name: 'Dr. Ahmad Zuhayr Mufti', specialty: 'Diabetes', experience: '18+ years', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500' },
+  { id: 3, name: 'Dr. Ghulam', specialty: 'Diabetes', experience: '18+ years', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500' },
   { id: 4, name: 'Dr. Shazia', specialty: 'Dermatology', experience: '10+ years', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000' },
-  { id: 5, name: 'Dr. Shaima', specialty: 'Gynaecology', experience: '12+ years', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500' },
+  { id: 5, name: 'Dr. Talat Naz', specialty: 'Gynaecology', experience: '12+ years', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200' },
   { id: 6, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', experience: '20+ years', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500' },
-  { id: 7, name: 'Dr. Amir', specialty: 'Ophthalmology', experience: '8+ years', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 1000' },
-  { id: 8, name: 'Dr. Zubaira', specialty: 'Dental', experience: '10+ years', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1500' },
-  { id: 9, name: 'Dr. Shahzeb (UK)', specialty: 'Telemedicine', experience: '15+ years', rating: 4.8, available: ['Online'], fee: 'Rs. 1500' },
-  { id: 10, name: 'Dr. Inam Ullah (UK)', specialty: 'Telemedicine', experience: '12+ years', rating: 4.7, available: ['Online'], fee: 'Rs. 1000' },
-  { id: 11, name: 'Dr. Nizam (UK)', specialty: 'Telemedicine', experience: '10+ years', rating: 4.6, available: ['Online'], fee: 'Rs. 1000' },
-  { id: 12, name: 'Dr. Masood (UK)', specialty: 'Telemedicine', experience: '14+ years', rating: 4.8, available: ['Online'], fee: 'Rs. 1000' },
+  { id: 7, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', experience: '8+ years', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500' },
+  { id: 8, name: 'Dr. Sohail', specialty: 'Ophthalmology', experience: '8+ years', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500' },
+  { id: 9, name: 'Dr. Faisal Hayat', specialty: 'Dental', experience: '10+ years', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500' },
+  { id: 10, name: 'Dr. Ayesha', specialty: 'Dental', experience: '8+ years', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 500' },
+  { id: 11, name: 'Dr. Hira', specialty: 'Dental', experience: '7+ years', rating: 4.6, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500' },
+  { id: 12, name: 'Dr. Rooh ul Muqim', specialty: 'General Surgery', experience: '15+ years', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200' },
 ]
 
 const specialties = [
@@ -30,7 +30,7 @@ const specialties = [
   'Gynaecology',
   'Ophthalmology',
   'Dental',
-  'Telemedicine',
+  'General Surgery',
 ]
 
 export function FindDoctor() {

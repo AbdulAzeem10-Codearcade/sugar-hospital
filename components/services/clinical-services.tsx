@@ -17,14 +17,14 @@ import {
 
 const services = [
   {
-    icon: Heart,
-    title: 'Cardiology',
-    description: 'Comprehensive heart care including diagnostics, treatment, and cardiac rehabilitation',
+    icon: Stethoscope,
+    title: 'General Medicine',
+    description: 'Primary care and treatment for a wide range of medical conditions',
   },
   {
-    icon: Brain,
-    title: 'Neurology',
-    description: 'Expert neurological care for brain, spine, and nervous system disorders',
+    icon: Activity,
+    title: 'Endocrinology & Diabetes',
+    description: 'Specialized diabetes and hormonal disorder management',
   },
   {
     icon: Eye,
@@ -32,29 +32,29 @@ const services = [
     description: 'Complete eye care services including diabetic retinopathy screening',
   },
   {
-    icon: Bone,
-    title: 'Orthopedics',
-    description: 'Treatment for bone, joint, and musculoskeletal conditions',
-  },
-  {
-    icon: Baby,
-    title: 'Pediatrics',
-    description: 'Specialized care for children including Type-1 diabetes management',
-  },
-  {
-    icon: Stethoscope,
-    title: 'General Medicine',
-    description: 'Primary care and treatment for a wide range of medical conditions',
-  },
-  {
-    icon: Activity,
-    title: 'Endocrinology',
-    description: 'Specialized diabetes and hormonal disorder management',
-  },
-  {
     icon: Syringe,
     title: 'Diabetic Foot Care',
     description: 'Prevention and treatment of diabetes-related foot complications',
+  },
+  {
+    icon: Heart,
+    title: 'Dermatology',
+    description: 'Skin care and treatment of diabetes-related skin conditions',
+  },
+  {
+    icon: Brain,
+    title: 'Gynaecology',
+    description: 'Women\'s health care including gestational diabetes management',
+  },
+  {
+    icon: Bone,
+    title: 'General Surgery',
+    description: 'Surgical procedures including diabetes-related complications',
+  },
+  {
+    icon: Baby,
+    title: 'Dental Care',
+    description: 'Comprehensive dental services with focus on diabetic patients',
   },
 ]
 

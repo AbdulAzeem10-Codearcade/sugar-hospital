@@ -1,16 +1,18 @@
 "use client"
 
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { MessageCircle, Phone, Mail, Calendar, Heart, FlaskConical } from 'lucide-react'
+import { Phone, Mail, Calendar, Heart, FlaskConical } from 'lucide-react'
 
 const contactMethods = [
   {
-    icon: MessageCircle,
+    icon: '/images/whatsapp-icon.svg',
     title: 'WhatsApp',
     description: 'Get instant responses for appointments',
     action: 'Chat Now',
     color: 'bg-[#25D366]',
     numbers: ['0301-1155713'],
+    isImage: true,
   },
   {
     icon: Phone,
@@ -19,6 +21,7 @@ const contactMethods = [
     action: 'Call Now',
     color: 'bg-[#5F9ED1]',
     numbers: ['0301-1155713', '091-5892728'],
+    isImage: false,
   },
   {
     icon: Mail,
@@ -27,6 +30,7 @@ const contactMethods = [
     action: 'Email Us',
     color: 'bg-[#A34C55]',
     email: 'admin@sugarhospital.com',
+    isImage: false,
   },
 ]
 
@@ -94,7 +98,11 @@ export function ContactMethods() {
               style={{ transitionDelay: `${(index + 3) * 100}ms` }}
             >
               <div className={`w-16 h-16 ${method.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
-                <method.icon className="w-8 h-8 text-white" />
+                {method.isImage ? (
+                  <Image src={method.icon as string} alt={method.title} width={32} height={32} />
+                ) : (
+                  <method.icon className="w-8 h-8 text-white" />
+                )}
               </div>
               <h3 className="text-xl font-bold text-[#3F4A7A] mb-3">{method.title}</h3>
               <p className="text-[#8A8A8A] mb-6">{method.description}</p>

@@ -8,8 +8,8 @@ import { Pill, Clock, Shield, DollarSign, Users, ArrowRight } from 'lucide-react
 const features = [
   {
     icon: Clock,
-    title: '24/7 Availability',
-    description: 'Round-the-clock pharmacy services for your convenience',
+    title: 'Extended Hours',
+    description: 'Open daily from 8:00 AM to 10:00 PM for your convenience',
   },
   {
     icon: Shield,

@@ -11,6 +11,7 @@ const doctorCategories = [
     doctors: [
       { name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', fee: 'Rs. 100' },
       { name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', fee: 'Rs. 100' },
+      { name: 'General OPD Consultation', specialty: 'General Medical Consultation', fee: 'Rs. 100' },
     ],
   },
   {
@@ -18,11 +19,12 @@ const doctorCategories = [
     icon: Heart,
     color: 'bg-[#A34C55]',
     doctors: [
-      { name: 'Dr. Ahmad Zuhayr Mufti', specialty: 'Diabetes', fee: 'Rs. 1500' },
+      { name: 'Dr. Ghulam', specialty: 'Diabetes', fee: 'Rs. 1500' },
       { name: 'Dr. Muhammad Jawad', specialty: 'Medical & Diabetes Specialist', fee: 'Rs. 1500' },
       { name: 'Dr. Abdul Jalil', specialty: 'Diabetes', fee: 'Rs. 1500' },
       { name: 'Dr. Shazia', specialty: 'Dermatologist Specialist', fee: 'Rs. 1000' },
-      { name: 'Dr. Shaima', specialty: 'Consultant Gynaecologist', fee: 'Rs. 1500' },
+      { name: 'Dr. Talat Naz', specialty: 'Consultant Gynaecologist', fee: 'Rs. 1200' },
+      { name: 'Dr. Rooh ul Muqim', specialty: 'General Surgeon', fee: 'Rs. 1200' },
     ],
   },
   {
@@ -31,7 +33,8 @@ const doctorCategories = [
     color: 'bg-[#3F4A7A]',
     doctors: [
       { name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Consultant Eye Surgeon', fee: 'Rs. 1500' },
-      { name: 'Dr. Amir', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 1000' },
+      { name: 'Dr. Sadiya Hassan', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 500' },
+      { name: 'Dr. Sohail', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 500' },
     ],
   },
   {
@@ -40,32 +43,18 @@ const doctorCategories = [
     color: 'bg-[#5F9ED1]',
     doctors: [
       { name: 'Hygiene Counseling', specialty: 'Free for OPD Patients', fee: 'Free' },
-      { name: 'Foot Procedures', specialty: 'Diabetic Foot Care', fee: 'Rs. 300' },
+      { name: 'Foot Procedures', specialty: 'Diabetic Foot Care', fee: 'Rs. 500' },
     ],
   },
-  {
-    category: 'Tele Medicine',
-    icon: Globe,
-    color: 'bg-[#A34C55]',
-    doctors: [
-      { name: 'Dr. Shahzeb (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1500' },
-      { name: 'Dr. Inam Ullah (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Nizam (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Masood (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Tamar Saeed (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Imran Abbasi (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Tufail Ijaz (USA)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Jawad Bashir (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-      { name: 'Dr. Jawad Babar (UK)', specialty: 'Telemedicine Consultation', fee: 'Rs. 1000' },
-    ],
-  },
+
   {
     category: 'Dental',
     icon: Smile,
     color: 'bg-[#3F4A7A]',
     doctors: [
-      { name: 'Dr. Faisal', specialty: 'Dental Consultation', fee: 'Rs. 500' },
-      { name: 'Dr. Zubaira', specialty: 'Dental Consultation', fee: 'Rs. 100' },
+      { name: 'Dr. Faisal Hayat', specialty: 'Dental Consultation', fee: 'Rs. 500' },
+      { name: 'Dr. Ayesha', specialty: 'Dental Consultation', fee: 'Rs. 500' },
+      { name: 'Dr. Hira', specialty: 'Dental Consultation', fee: 'Rs. 500' },
     ],
   },
 ]
@@ -141,7 +130,8 @@ const dentalProcedures = [
 ]
 
 const additionalServices = [
-  { name: 'ECG', fee: 'Rs. 200' },
+  { name: 'ECG', fee: 'Rs. 400' },
+  { name: 'General OPD', fee: 'Rs. 100' },
 ]
 
 export function DoctorsFees() {
@@ -209,7 +199,7 @@ export function DoctorsFees() {
 
           {/* Additional Services */}
           <div
-            className={`bg-gradient-to-br from-[#3F4A7A] to-[#5F9ED1] rounded-2xl p-8 text-white transition-all duration-700 delay-900 ${
+            className={`bg-linear-to-br from-[#3F4A7A] to-[#5F9ED1] rounded-2xl p-8 text-white transition-all duration-700 delay-900 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >

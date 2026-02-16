@@ -1,7 +1,8 @@
 "use client"
 
 import Link from 'next/link'
-import { ChevronRight, Phone, Mail, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
+import { ChevronRight, Phone, Mail } from 'lucide-react'
 
 export function ContactHero() {
   return (
@@ -34,7 +35,7 @@ export function ContactHero() {
         <div className="grid sm:grid-cols-3 gap-6 mt-12">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-fade-in-up delay-400">
             <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mb-4">
-              <MessageCircle className="w-6 h-6 text-white" />
+              <Image src="/images/whatsapp-icon.svg" alt="WhatsApp" width={24} height={24} />
             </div>
             <div className="text-white/80 text-sm mb-1">WhatsApp</div>
             <div className="text-white font-semibold">0301-1155713</div>
