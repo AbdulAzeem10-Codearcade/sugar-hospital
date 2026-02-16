@@ -44,7 +44,7 @@ const quickLinks = [
     title: 'Find a Doctor',
     description: 'Search our team of qualified healthcare professionals',
     icon: Stethoscope,
-    href: '/contact',
+    href: '/patients#find-doctor',
     color: 'bg-[#3F4A7A]',
   },
 ]

@@ -18,7 +18,7 @@ const services = [
     title: 'Clinical Services',
     description: 'Comprehensive clinical care including diagnostics, treatment, and follow-up care from our expert medical team.',
     icon: Stethoscope,
-    href: '/about#services',
+    href: '/services#clinical',
   },
   {
     title: 'Laboratory Services',
@@ -30,19 +30,19 @@ const services = [
     title: 'Pharmacy',
     description: 'Well-stocked pharmacy with genuine medications and professional pharmaceutical guidance.',
     icon: Pill,
-    href: '/about#services',
+    href: '/services#pharmacy',
   },
   {
     title: 'Diagnostic Imaging',
     description: 'Advanced imaging services including X-ray, ultrasound, CT scan, and MRI.',
     icon: Microscope,
-    href: '/about#services',
+    href: '/services#diagnostic',
   },
   {
     title: 'Emergency Care',
     description: '24/7 emergency medical services with rapid response and critical care capabilities.',
     icon: HeartPulse,
-    href: '/about#services',
+    href: '/contact',
   },
   {
     title: 'Specialized Care',
@@ -72,7 +72,7 @@ export function ServicesSection() {
             variant="outline"
             className={`border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white self-start md:self-auto transition-all duration-700 delay-200 bg-transparent ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
           >
-            <Link href="/about#services">
+            <Link href="/services">
               View All Services
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
