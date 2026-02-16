@@ -15,7 +15,6 @@ const footerLinks = {
     { name: 'Find a Doctor', href: '/patients#find-doctor' },
     { name: 'Find a Lab Test', href: '/patients#find-test' },
     { name: 'Book Appointment', href: '/contact' },
-    { name: 'Patient Guides', href: '/patients#guides' },
   ],
   support: [
     { name: 'Donate Now', href: '/support#donation' },

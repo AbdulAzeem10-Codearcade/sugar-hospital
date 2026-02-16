@@ -1,13 +1,12 @@
 "use client"
 
 import Link from 'next/link'
-import { ChevronRight, Calendar, Stethoscope, FlaskConical, BookOpen } from 'lucide-react'
+import { ChevronRight, Calendar, Stethoscope, FlaskConical } from 'lucide-react'
 
 const quickLinks = [
   { icon: Calendar, title: 'Book Appointment', href: '/contact' },
   { icon: Stethoscope, title: 'Find a Doctor', href: '#find-doctor' },
   { icon: FlaskConical, title: 'Find a Lab Test', href: '#find-test' },
-  { icon: BookOpen, title: 'Patient Guides', href: '#guides' },
 ]
 
 export function PatientsHero() {
@@ -35,7 +34,7 @@ export function PatientsHero() {
         </div>
 
         {/* Quick Links */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+        <div className="grid sm:grid-cols-3 gap-4 mt-12">
           {quickLinks.map((link, index) => (
             <a
               key={link.title}

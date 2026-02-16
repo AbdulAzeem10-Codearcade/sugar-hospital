@@ -32,7 +32,6 @@ const navigation = [
       { name: 'Lab Services & Tests', href: '/patients#find-test' },
       { name: 'Find a Doctor', href: '/patients#find-doctor' },
       { name: 'Find a Lab Test', href: '/patients#find-test' },
-      { name: 'Patient Information Guides', href: '/patients#guides' },
       { name: 'Financial Assistance Programme', href: '/patients#financial-assistance' },
       { name: 'Our Network', href: '/patients#network' },
     ],
