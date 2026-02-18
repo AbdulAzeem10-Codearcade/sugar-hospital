@@ -10,21 +10,21 @@ import { Button } from '@/components/ui/button'
 import { Search, Calendar, Phone, Star } from 'lucide-react'
 
 const doctors = [
-  { id: 1, name: 'Prof. Dr. Rooh ul Muqim', specialty: 'General Surgery', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/placeholder-user.jpg' },
-  { id: 2, name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/placeholder-user.jpg' },
-  { id: 3, name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', rating: 4.8, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/placeholder-user.jpg' },
-  { id: 4, name: 'Dr. Ghulam Farooq', specialty: 'Diabetes, Endocrine', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500', image: '/placeholder-user.jpg' },
-  { id: 5, name: 'Dr. Shazia Naz', specialty: 'Dermatology', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000', image: '/placeholder-user.jpg' },
+  { id: 1, name: 'Prof. Dr. Rooh ul Muqim', specialty: 'General Surgery', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/images/Doctors/Dr Rooh ul Muqim.jpg' },
+  { id: 2, name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/images/Doctors/dr Muhammad Jawad.jpeg' },
+  { id: 3, name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', rating: 4.8, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/images/Doctors/Dr Abdul Jalil Khan.jpeg' },
+  { id: 4, name: 'Dr. Ghulam Farooq', specialty: 'Diabetes, Endocrine', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500', image: '/images/Doctors/Dr Ghulam Farooq.jpeg' },
+  { id: 5, name: 'Dr. Shazia Naz', specialty: 'Dermatology', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000', image: '/images/Doctors/Dr Shazia Naz.jpeg' },
   { id: 6, name: 'Dr. Talat Naz', specialty: 'Gynaecology', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/placeholder-user.jpg' },
-  { id: 7, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500', image: '/placeholder-user.jpg' },
-  { id: 8, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 7, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500', image: '/images/Doctors/Dr Lal Muhammad Khattak Senior Consultant Ophthalmologist.jpeg' },
+  { id: 8, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/images/Doctors/Dr Sadia.jpeg' },
   { id: 9, name: 'Mr. Amir Sohail', specialty: 'Optometry', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
-  { id: 10, name: 'Mr. Sohail', specialty: 'Optometry', rating: 4.5, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 10, name: 'Mr. Sohail', specialty: 'Optometry', rating: 4.5, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/images/Doctors/MR Sohail.jpeg' },
   { id: 11, name: 'Dr. Faisal Hayat', specialty: 'Dental', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
   { id: 12, name: 'Dr. Ayesha Khan', specialty: 'Dental', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
   { id: 13, name: 'Dr. Hira Khan', specialty: 'Dental', rating: 4.6, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
   { id: 14, name: 'RD. Ghazala', specialty: 'Dietitian', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 800', image: '/placeholder-user.jpg' },
-  { id: 15, name: 'DPM. Habib', specialty: 'Podiatrist - Footcare', rating: 4.8, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 800', image: '/placeholder-user.jpg' },
+  { id: 15, name: 'DPM. Habib', specialty: 'Podiatrist - Footcare', rating: 4.8, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 800', image: '/images/Sugar Hospital Staff/Habib footcare.jpeg' },
 ]
 
 const specialties = [
