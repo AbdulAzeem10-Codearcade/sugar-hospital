@@ -16,7 +16,7 @@ const doctors = [
   { id: 4, name: 'Dr. Ghulam Farooq', specialty: 'Diabetes, Endocrine', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500', image: '/images/Doctors/Dr Ghulam Farooq.jpeg' },
   { id: 5, name: 'Dr. Shazia Naz', specialty: 'Dermatology', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000', image: '/images/Doctors/Dr Shazia Naz.jpeg' },
   { id: 6, name: 'Dr. Talat Naz', specialty: 'Gynaecology', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/placeholder-user.jpg' },
-  { id: 7, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500', image: '/images/Doctors/Dr Lal Muhammad Khattak Senior Consultant Ophthalmologist.jpeg' },
+  { id: 7, name: 'Prof. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500', image: '/images/Doctors/Dr Lal Muhammad Khattak Senior Consultant Ophthalmologist.jpeg' },
   { id: 8, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/images/Doctors/Dr Sadia.jpeg' },
   { id: 9, name: 'Mr. Amir Sohail', specialty: 'Optometry', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
   { id: 10, name: 'Mr. Sohail', specialty: 'Optometry', rating: 4.5, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/images/Doctors/MR Sohail.jpeg' },

@@ -32,7 +32,7 @@ const doctorCategories = [
     icon: Eye,
     color: 'bg-[#3F4A7A]',
     doctors: [
-      { name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Consultant Eye Surgeon', fee: 'Rs. 1500' },
+      { name: 'Prof. Dr. Lal Muhammad Khattak', specialty: 'Consultant Eye Surgeon', fee: 'Rs. 1500' },
       { name: 'Dr. Sadiya Hassan', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 500' },
       { name: 'Mr. Amir Sohail', specialty: 'Optometrist', fee: 'Rs. 500' },
     ],
