@@ -111,6 +111,8 @@ export function FindDoctor() {
                   alt={doctor.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={95}
                 />
                 {/* Rating badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">

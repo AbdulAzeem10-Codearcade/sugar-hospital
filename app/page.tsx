@@ -6,6 +6,7 @@ import { ServicesSection } from '@/components/home/services-section'
 import { StatsSection } from '@/components/home/stats-section'
 import { FacilityGallery } from '@/components/home/facility-gallery'
 import { SuccessStoriesSection } from '@/components/home/success-stories-section'
+import { PartnersSection } from '@/components/home/partners-section'
 import { SupportSection } from '@/components/home/support-section'
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
         <StatsSection />
         <FacilityGallery />
         <SuccessStoriesSection />
+        <PartnersSection />
         <SupportSection />
       </main>
       <Footer />

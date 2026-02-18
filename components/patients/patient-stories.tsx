@@ -1,41 +1,46 @@
 "use client"
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { Quote, ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const stories = [
   {
     id: 1,
-    name: 'Muhammad Imran',
-    age: 45,
-    condition: 'Heart Surgery Recovery',
-    story: 'I came to AIMS Pakistan with a severe heart condition. The cardiac team performed a complex bypass surgery that saved my life. The care I received during recovery was exceptional. Today, I am back to my normal life, thanks to the dedicated doctors and staff.',
-    location: 'Peshawar',
+    name: 'Fatima Bibi',
+    age: 38,
+    condition: 'Type 2 Diabetes Management',
+    story: 'Managing diabetes was overwhelming until I joined the diabetes care program at AIMS. The doctors and nutritionists created a personalized plan that has transformed my health. My blood sugar is now under control, and I feel healthier than ever.',
+    location: 'Mardan',
+    image: '/images/patients/AIMS-Sugar-Hospital-Patient1A.jpg',
   },
   {
     id: 2,
-    name: 'Fatima Bibi',
-    age: 38,
-    condition: 'Diabetes Management',
-    story: 'Managing diabetes was overwhelming until I joined the diabetes care program at AIMS. The doctors and nutritionists created a personalized plan that has transformed my health. My blood sugar is now under control, and I feel healthier than ever.',
-    location: 'Mardan',
+    name: 'Ahmed Khan',
+    age: 52,
+    condition: 'Diabetic Foot Care',
+    story: 'I was suffering from diabetic foot complications and feared amputation. The podiatry team at AIMS provided exceptional care and saved my foot. Their expertise in diabetic foot care is truly remarkable. I can walk pain-free now.',
+    location: 'Peshawar',
+    image: '/images/patients/Copy of _MG_1233 (1).jpg',
   },
   {
     id: 3,
-    name: 'Amir Khan',
-    age: 52,
-    condition: 'Orthopedic Treatment',
-    story: 'After a severe accident, doctors told me I might never walk again. But the orthopedic team at AIMS believed otherwise. After surgery and months of rehabilitation, I am now walking independently. They gave me hope when I had none.',
-    location: 'Swat',
+    name: 'Ayesha Gul',
+    age: 28,
+    condition: 'Gestational Diabetes',
+    story: 'My pregnancy was complicated by gestational diabetes, and I was scared. The maternity and diabetes team at AIMS provided exceptional care throughout my journey. They monitored me closely and ensured a safe delivery. My baby and I are healthy.',
+    location: 'Nowshera',
+    image: '/images/patients/IMG-20251218-WA0027.jpg',
   },
   {
     id: 4,
-    name: 'Ayesha Gul',
-    age: 28,
-    condition: 'Maternal Care',
-    story: 'My pregnancy was high-risk, and I was scared. The maternity team at AIMS provided exceptional care throughout my journey. They monitored me closely and ensured a safe delivery. My baby and I are healthy, all thanks to their expertise.',
-    location: 'Nowshera',
+    name: 'Muhammad Imran',
+    age: 45,
+    condition: 'Type 1 Diabetes',
+    story: 'Living with Type 1 diabetes was challenging until I found AIMS Pakistan. The endocrinology team helped me understand insulin management and lifestyle changes. Their continuous support has given me confidence to live a normal, active life.',
+    location: 'Swat',
+    image: '/images/patients/Swabi CAmp 4 dec 25.jpg',
   },
 ]
 
@@ -80,15 +85,27 @@ export function PatientStories() {
                 &ldquo;{stories[currentStory].story}&rdquo;
               </p>
               
-              <div className="flex items-center justify-between">
-                <div>
-                  <h4 className="font-semibold text-lg">{stories[currentStory].name}</h4>
-                  <p className="text-white/70 text-sm">
-                    {stories[currentStory].age} years | {stories[currentStory].location}
-                  </p>
-                  <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm mt-2">
-                    {stories[currentStory].condition}
-                  </span>
+              <div className="flex items-center justify-between flex-wrap gap-4">
+                <div className="flex items-center gap-4">
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-4 border-white/30 shrink-0">
+                    <Image
+                      src={stories[currentStory].image}
+                      alt={stories[currentStory].name}
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                      quality={95}
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg">{stories[currentStory].name}</h4>
+                    <p className="text-white/70 text-sm">
+                      {stories[currentStory].age} years | {stories[currentStory].location}
+                    </p>
+                    <span className="inline-block px-3 py-1 bg-white/20 rounded-full text-sm mt-2">
+                      {stories[currentStory].condition}
+                    </span>
+                  </div>
                 </div>
                 
                 <div className="flex gap-2">

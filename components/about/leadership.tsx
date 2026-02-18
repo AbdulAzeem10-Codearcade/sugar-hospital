@@ -47,7 +47,7 @@ const management = [
     name: 'Prof. Dr. Rooh-ul-Muqim', 
     title: 'Medical Director', 
     department: 'Clinical Operations',
-    image: '/images/Sugar Hospital Staff/Dr Rooh ul Muqim.jpg'
+    image: '/images/Doctors/Dr Rooh ul Muqim.jpg'
   },
   { 
     name: 'Mr. Salman Zaman', 
@@ -62,10 +62,10 @@ const management = [
     image: '/placeholder-user.jpg'
   },
   { 
-    name: 'Mr. Joba Tanveer', 
+    name: 'Mrs. Saba Tanveer', 
     title: 'Manager Projects', 
     department: 'Project Development',
-    image: '/placeholder-user.jpg'
+    image: '/images/Directors/Saba Tanveer.jpg'
   },
   { 
     name: 'Mr. Muhammad Akhtar', 
@@ -102,12 +102,14 @@ export function Leadership() {
                   }`}
                   style={{ transitionDelay: `${(index + 2) * 100}ms` }}
                 >
-                  <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1] shadow-lg">
+                  <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1] shadow-lg">
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
                       className="object-cover"
+                      sizes="128px"
+                      quality={95}
                     />
                   </div>
                   <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{member.name}</h3>
@@ -134,12 +136,14 @@ export function Leadership() {
                   key={role.name}
                   className="bg-white rounded-xl p-6 border-2 border-[#E2E2E2] hover:border-[#5F9ED1] hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="relative w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1]">
+                  <div className="relative w-28 h-28 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1]">
                     <Image
                       src={role.image}
                       alt={role.name}
                       fill
                       className="object-cover"
+                      sizes="112px"
+                      quality={95}
                     />
                   </div>
                   <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{role.name}</h3>

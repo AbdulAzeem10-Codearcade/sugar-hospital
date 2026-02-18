@@ -7,13 +7,13 @@ import { Handshake, Building, Heart } from 'lucide-react'
 const partners = [
   { name: 'Hilton Pharma', category: 'Pharmaceutical', logo: '/images/Partners/Hilton Pharma partner.png' },
   { name: 'National Bank Ltd', category: 'Banking', logo: '/images/Partners/National Bank Ltd Partner.png' },
-  { name: 'Aitemad Banking', category: 'Financial Services' },
+  { name: 'Aitemad Banking', category: 'Financial Services', logo: '/images/Partners/images.jpeg' },
   { name: 'Martin Dow', category: 'Pharmaceutical', logo: '/images/Partners/Martin Dow Partner.png' },
-  { name: 'Merker', category: 'Healthcare' },
+  { name: 'Merker', category: 'Healthcare', logo: '/images/Partners/MERKER.png' },
   { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/images/Partners/Al khidmat Partner.png' },
   { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/images/Partners/meethi zindagi partner.jpg' },
   { name: 'Khyber Medical University', category: 'Academic', logo: '/images/Partners/kmu logo.jpeg' },
-  { name: 'CCL Pharma', category: 'Pharmaceutical' },
+  { name: 'CCL Pharma', category: 'Pharmaceutical', logo: '/images/Partners/CCL-logo.png' },
   { name: 'Edhi Foundation', category: 'Charitable Organization', logo: '/images/Partners/Edhi partner.png' },
   { name: 'Life for a Child', category: 'International NGO', logo: '/images/Partners/Life for a Child Partner.png' },
 ]
@@ -47,12 +47,14 @@ export function Partnerships() {
                 style={{ transitionDelay: `${(index + 2) * 50}ms` }}
               >
                 {partner.logo ? (
-                  <div className="relative w-32 h-32 mx-auto mb-4">
+                  <div className="relative w-40 h-40 mx-auto mb-4">
                     <Image
                       src={partner.logo}
                       alt={`${partner.name} logo`}
                       fill
-                      className="object-contain"
+                      className="object-contain p-2"
+                      sizes="160px"
+                      quality={95}
                     />
                   </div>
                 ) : (

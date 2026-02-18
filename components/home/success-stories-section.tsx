@@ -10,24 +10,24 @@ import { ChevronLeft, ChevronRight, Quote, ArrowRight } from 'lucide-react'
 const stories = [
   {
     id: 1,
-    name: 'Ahmed Hassan',
-    condition: 'Cardiac Patient',
-    story: 'The doctors at AIMS Pakistan saved my life. After my heart surgery, I received exceptional care and support throughout my recovery. I am forever grateful for their dedication.',
-    image: '/images/patient-1.jpg',
+    name: 'Fatima Khan',
+    condition: 'Type 2 Diabetes',
+    story: 'Managing diabetes seemed impossible until I found AIMS Pakistan. Their comprehensive care program and dedicated team helped me take control of my health and live a fulfilling life.',
+    image: '/images/patients/AIMS-Sugar-Hospital-Patient1A.jpg',
   },
   {
     id: 2,
-    name: 'Fatima Khan',
-    condition: 'Diabetic Patient',
-    story: 'Managing diabetes seemed impossible until I found AIMS Pakistan. Their comprehensive care program and dedicated team helped me take control of my health and live a fulfilling life.',
-    image: '/images/patient-2.jpg',
+    name: 'Ahmed Hassan',
+    condition: 'Diabetic Retinopathy',
+    story: 'The ophthalmology team at AIMS saved my vision. Their expertise in treating diabetic eye complications is exceptional. I received timely treatment and my eyesight is now stable. Forever grateful.',
+    image: '/images/patients/Swabi Camp 6 dec 25.jpg',
   },
   {
     id: 3,
     name: 'Mohammad Ali',
-    condition: 'Orthopedic Patient',
-    story: 'After my accident, I thought I would never walk again. The orthopedic team at AIMS performed a miracle. Today, I walk without any assistance. Thank you, AIMS!',
-    image: '/images/patient-3.jpg',
+    condition: 'Diabetic Neuropathy',
+    story: 'I was suffering from severe nerve pain due to diabetes. The specialized care at AIMS helped manage my condition effectively. The pain management program has significantly improved my quality of life.',
+    image: '/images/patients/Copy of _MG_1233 (1).jpg',
   },
 ]
 
@@ -73,15 +73,14 @@ export function SuccessStoriesSection() {
             {/* Image */}
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4F6F8] relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-[#5F9ED1]/20 rounded-full flex items-center justify-center">
-                    <div className="w-24 h-24 bg-[#5F9ED1]/30 rounded-full flex items-center justify-center">
-                      <div className="w-16 h-16 bg-[#5F9ED1] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                        {stories[currentStory].name.charAt(0)}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src={stories[currentStory].image}
+                  alt={stories[currentStory].name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={95}
+                />
               </div>
               {/* Quote icon */}
               <div className="absolute -top-4 -left-4 w-16 h-16 bg-[#A34C55] rounded-xl flex items-center justify-center shadow-lg">

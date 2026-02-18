@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin, Heart } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react'
 
 const footerLinks = {
   quickLinks: [
@@ -184,9 +184,21 @@ export function Footer() {
           <p className="text-white/60 text-sm text-center md:text-left">
             © {new Date().getFullYear()} Sugar Hospital - Diabetes General Hospital & Research Centre. All rights reserved.
           </p>
-          <p className="text-white/60 text-sm flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-[#A34C55] fill-[#A34C55]" /><a href="https://blancos-hq-portfolio.vercel.app/">BY BlancosHQ </a>
-          </p>
+          <div className="flex items-center gap-2">
+            <p className="text-white/60 text-sm">Made with care by</p>
+            <a 
+              href="https://blancos-hq-portfolio.vercel.app/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-block px-4 py-2 text-sm font-semibold text-white rounded-lg overflow-hidden group"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-[#5F9ED1] via-[#A34C55] to-[#5F9ED1] animate-gradient-x"></span>
+              <span className="absolute inset-[2px] bg-[#1E3A52] rounded-lg"></span>
+              <span className="relative z-10 bg-gradient-to-r from-[#5F9ED1] to-[#A34C55] bg-clip-text text-transparent group-hover:from-[#A34C55] group-hover:to-[#5F9ED1] transition-all duration-300">
+                BlancosHQ
+              </span>
+            </a>
+          </div>
         </div>
         <div className="container mx-auto px-4 mt-2">
           <p className="text-white/40 text-xs text-center">
