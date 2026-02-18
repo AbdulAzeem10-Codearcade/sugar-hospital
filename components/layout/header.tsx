@@ -34,7 +34,7 @@ const navigation = [
     children: [
       { name: 'Lab Services & Tests', href: '/patients#find-test' },
       { name: 'Find a Doctor', href: '/patients#find-doctor' },
-      { name: 'Autism & Allies', href: '/patients#autism-allies' },
+      { name: 'Autism Allies', href: '/patients#autism-allies' },
       { name: 'Financial Assistance Programme', href: '/patients#financial-assistance' },
       { name: 'Our Network', href: '/patients#network' },
     ],

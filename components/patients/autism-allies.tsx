@@ -75,7 +75,7 @@ export function AutismAllies() {
             Specialized Care
           </span>
           <h2 className={`text-3xl md:text-4xl font-bold text-[#3F4A7A] mb-4 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Centre for Psychological Services – Autism & Allies
+            Centre for Psychological Services – Autism Allies
           </h2>
           <p className={`text-[#8A8A8A] max-w-3xl mx-auto transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             Comprehensive psychological and developmental support services for children and families
