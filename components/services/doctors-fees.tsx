@@ -61,73 +61,73 @@ const doctorCategories = [
 ]
 
 const dentalProcedures = [
-  { name: 'Dental Implant', fee: 'Rs. 60,000' },
-  { name: 'Alvoplasty', fee: 'Rs. 2,000' },
-  { name: 'Amalgam Complex Filling', fee: 'Rs. 2,000' },
-  { name: 'Amalgam Simple Filling', fee: 'Rs. 800' },
-  { name: 'Bite Block 1 Arch', fee: 'Rs. 3,000' },
-  { name: 'Bite Block 2 Arch', fee: 'Rs. 26,000' },
-  { name: 'Bleaching 16 prc (Teeth Whitening)', fee: 'Rs. 15,000' },
-  { name: 'Bleaching 36 prc (Teeth Whitening)', fee: 'Rs. 25,000' },
-  { name: 'C/C Plate 1 Arch', fee: 'Rs. 1,000' },
-  { name: 'C/C Plate 2 Arch', fee: 'Rs. 20,000' },
-  { name: 'Composite Complex Filling', fee: 'Rs. 5,000' },
-  { name: 'Composite Simple Filling', fee: 'Rs. 4,000' },
-  { name: 'Corn Removal', fee: 'Rs. 800' },
-  { name: 'Crown Cementation per tooth', fee: 'Rs. 500' },
-  { name: 'PFM Crown', fee: 'Rs. 5,000' },
-  { name: 'Crown Designed', fee: 'Rs. 5,500' },
-  { name: 'Crown Lengthening (Surgical)', fee: 'Rs. 3,000' },
-  { name: 'Zirconia Crown', fee: 'Rs. 20,000' },
-  { name: 'Complete Denture Adjustment (both)', fee: 'Rs. 40,000' },
-  { name: 'Extraction Simple/BDR', fee: 'Rs. 1,000' },
-  { name: 'Extraction BDR Complex', fee: 'Rs. 2,000' },
-  { name: 'Extraction of impacted tooth', fee: 'Rs. 6,000' },
-  { name: 'Extraction Surgical', fee: 'Rs. 3,000' },
-  { name: 'Filling (GIC/amalgam)', fee: 'Rs. 1,500' },
-  { name: 'Fissure Sealant', fee: 'Rs. 1,500' },
-  { name: 'Flexible Denture (Complete Arch)', fee: 'Rs. 25,000' },
-  { name: 'Flexible Denture Complex', fee: 'Rs. 18,000' },
-  { name: 'Flexible Denture (Per Unit)', fee: 'Rs. 2,000' },
-  { name: 'Full Denture Advance (1 Arch)', fee: 'Rs. 28,000' },
-  { name: 'Full Denture both arches', fee: 'Rs. 50,000' },
-  { name: 'Full Porceline per tooth', fee: 'Rs. 7,000' },
-  { name: 'GIC Filling', fee: 'Rs. 4,000' },
-  { name: 'Growth Modifications', fee: 'Rs. 30,000' },
-  { name: 'High/Sharp Spot/Tooth', fee: 'Rs. 500' },
-  { name: 'Examination kit', fee: 'Rs. 500' },
-  { name: 'Invisible Braces (Clear Path)', fee: 'Rs. 150,000' },
-  { name: 'Localized Dressing', fee: 'Rs. 1,500' },
-  { name: 'Loose Bracket per piece', fee: 'Rs. 800' },
-  { name: 'Lower Denture', fee: 'Rs. 10,000' },
-  { name: 'Metal Crown 1 Unit', fee: 'Rs. 3,000' },
-  { name: 'Mono Plast Denture (1 Arch)', fee: 'Rs. 20,000' },
-  { name: 'Night Guard', fee: 'Rs. 3,000' },
-  { name: 'Ortho Kit (American)', fee: 'Rs. 3,000' },
-  { name: 'Ortho Kit (Chinese)', fee: 'Rs. 1,500' },
-  { name: 'Orthodontics (Complex)', fee: 'Rs. 75,000' },
-  { name: 'Orthodontics (Simple)', fee: 'Rs. 50,000' },
-  { name: 'Orthodontics Appointment (Complex)', fee: 'Rs. 2,000' },
-  { name: 'Orthodontics Appointment (Simple)', fee: 'Rs. 1,500' },
-  { name: 'Partial Denture', fee: 'Rs. 1,000' },
-  { name: 'Polishing', fee: 'Rs. 2,000' },
-  { name: 'Post & Core Build up', fee: 'Rs. 2,500' },
-  { name: 'Pulpotomy', fee: 'Rs. 2,000' },
-  { name: 'RCT Interior', fee: 'Rs. 5,000' },
-  { name: 'RCT Posterior', fee: 'Rs. 6,000' },
-  { name: 'Re-RCT', fee: 'Rs. 8,000' },
-  { name: 'Retainer', fee: 'Rs. 10,000' },
-  { name: 'Retainer (Single Arch)', fee: 'Rs. 5,000' },
-  { name: 'Scaler Tip Disposable', fee: 'Rs. 500' },
-  { name: 'Scaling/Polishing Deep', fee: 'Rs. 5,000' },
-  { name: 'Scaling/Polishing Simple', fee: 'Rs. 3,000' },
-  { name: 'Teeth Whitening', fee: 'Rs. 4,000' },
-  { name: 'Temporary Filling', fee: 'Rs. 500' },
-  { name: 'Temporary Crown 1 Unit', fee: 'Rs. 800' },
-  { name: 'Tooth Extraction Complex', fee: 'Rs. 1,000' },
-  { name: 'Tooth Extraction Simple', fee: 'Rs. 600' },
-  { name: 'X-Ray', fee: 'Rs. 300' },
-  { name: 'Simple extraction', fee: 'Rs. 4,000' },
+  'Dental Implant',
+  'Alvoplasty',
+  'Amalgam Complex Filling',
+  'Amalgam Simple Filling',
+  'Bite Block 1 Arch',
+  'Bite Block 2 Arch',
+  'Bleaching 16 prc (Teeth Whitening)',
+  'Bleaching 36 prc (Teeth Whitening)',
+  'C/C Plate 1 Arch',
+  'C/C Plate 2 Arch',
+  'Composite Complex Filling',
+  'Composite Simple Filling',
+  'Corn Removal',
+  'Crown Cementation per tooth',
+  'PFM Crown',
+  'Crown Designed',
+  'Crown Lengthening (Surgical)',
+  'Zirconia Crown',
+  'Complete Denture Adjustment (both)',
+  'Extraction Simple/BDR',
+  'Extraction BDR Complex',
+  'Extraction of impacted tooth',
+  'Extraction Surgical',
+  'Filling (GIC/amalgam)',
+  'Fissure Sealant',
+  'Flexible Denture (Complete Arch)',
+  'Flexible Denture Complex',
+  'Flexible Denture (Per Unit)',
+  'Full Denture Advance (1 Arch)',
+  'Full Denture both arches',
+  'Full Porceline per tooth',
+  'GIC Filling',
+  'Growth Modifications',
+  'High/Sharp Spot/Tooth',
+  'Examination kit',
+  'Invisible Braces (Clear Path)',
+  'Localized Dressing',
+  'Loose Bracket per piece',
+  'Lower Denture',
+  'Metal Crown 1 Unit',
+  'Mono Plast Denture (1 Arch)',
+  'Night Guard',
+  'Ortho Kit (American)',
+  'Ortho Kit (Chinese)',
+  'Orthodontics (Complex)',
+  'Orthodontics (Simple)',
+  'Orthodontics Appointment (Complex)',
+  'Orthodontics Appointment (Simple)',
+  'Partial Denture',
+  'Polishing',
+  'Post & Core Build up',
+  'Pulpotomy',
+  'RCT Interior',
+  'RCT Posterior',
+  'Re-RCT',
+  'Retainer',
+  'Retainer (Single Arch)',
+  'Scaler Tip Disposable',
+  'Scaling/Polishing Deep',
+  'Scaling/Polishing Simple',
+  'Teeth Whitening',
+  'Temporary Filling',
+  'Temporary Crown 1 Unit',
+  'Tooth Extraction Complex',
+  'Tooth Extraction Simple',
+  'X-Ray',
+  'Simple extraction',
 ]
 
 const additionalServices = [
@@ -229,26 +229,13 @@ export function DoctorsFees() {
             </div>
 
             <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b-2 border-[#E2E2E2]">
-                    <th className="text-left py-3 px-4 text-[#3F4A7A] font-semibold">Procedure Name</th>
-                    <th className="text-right py-3 px-4 text-[#3F4A7A] font-semibold">Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {dentalProcedures.map((procedure, index) => (
-                    <tr key={index} className="border-b border-[#E2E2E2] hover:bg-[#F4F6F8] transition-colors">
-                      <td className="py-3 px-4 text-[#3F4A7A] font-medium">{procedure.name}</td>
-                      <td className="py-3 px-4 text-right">
-                        <span className="inline-block px-4 py-1 rounded-full text-sm font-semibold bg-[#3F4A7A]/10 text-[#3F4A7A]">
-                          {procedure.fee}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                {dentalProcedures.map((procedure, index) => (
+                  <div key={index} className="bg-[#F4F6F8] rounded-lg p-3 hover:bg-white transition-colors">
+                    <p className="text-[#3F4A7A] font-medium text-sm">{procedure}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

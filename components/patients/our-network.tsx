@@ -19,10 +19,10 @@ const campLocations = [
   { district: 'Charsadda', camps: '25+' },
   { district: 'Nowshera', camps: '20+' },
   { district: 'Dir', camps: '15+' },
-  { district: 'Malakand', camps: '15+' },
+  { district: 'Hasan Abdal', camps: '15+' },
   { district: 'Buner', camps: '10+' },
   { district: 'Kohat', camps: '10+' },
-  { district: 'Hangu', camps: '5+' },
+  { district: 'Ghazi', camps: '5+' },
 ]
 
 const partnerships = [
