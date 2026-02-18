@@ -124,7 +124,7 @@ export function Header() {
             <a href="https://www.linkedin.com/company/aims-pakistan/" target="_blank" rel="noopener noreferrer" className="hover:text-[#4A90C2] transition-colors" aria-label="LinkedIn">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a href="https://www.youtube.com/@AIMSPakistan" target="_blank" rel="noopener noreferrer" className="hover:text-[#4A90C2] transition-colors" aria-label="YouTube">
+            <a href="https://www.youtube.com/@aimspakistan7582" target="_blank" rel="noopener noreferrer" className="hover:text-[#4A90C2] transition-colors" aria-label="YouTube">
               <Youtube className="w-4 h-4" />
             </a>
           </div>
