@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 const facilityImages = [
   {
     src: '/images/Sugar hospital building images/SUgar Hospital Picture.jpg',
-    title: 'Sugar Hospital Main Building',
+    title: 'Sugar Hospital Old Building',
     category: 'Facility'
   },
   {
@@ -28,7 +28,7 @@ const facilityImages = [
     category: 'Services'
   },
   {
-    src: '/images/Sugar Hospital Staff/AIMS-Sugar-Hospital-Patient2A.jpg',
+    src: '/images/Sugar hospital building images/aimsStaff.jpeg',
     title: 'Hospital Staff',
     category: 'Services'
   },
