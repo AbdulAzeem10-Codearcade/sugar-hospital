@@ -237,7 +237,7 @@ export function PublicationsContent() {
           ))}
 
           {/* Conference Papers Section */}
-          <div className={`mt-16 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div id="conferences" className={`mt-16 scroll-mt-24 transition-all duration-700 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#3F4A7A] mb-4">
                 Conference Presentations

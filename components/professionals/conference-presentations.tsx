@@ -77,7 +77,7 @@ export function ConferencePresentations() {
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 {/* Year Badge */}
                 <div className="shrink-0">
-                  <div className="w-20 h-20 bg-gradient-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="w-20 h-20 bg-linear-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center shadow-lg">
                     <span className="text-2xl font-bold text-white">{conference.year}</span>
                   </div>
                 </div>
