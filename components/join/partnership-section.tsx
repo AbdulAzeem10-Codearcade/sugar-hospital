@@ -5,13 +5,6 @@ import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { Building, Heart, Users, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-"use client"
-
-import Image from 'next/image'
-import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { Building, Heart, Users, Mail } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-
 const partners = [
   { name: 'Hilton Pharma', category: 'Pharmaceutical Partner', logo: '/images/Partners/Hilton Pharma partner.png' },
   { name: 'National Bank Ltd', category: 'Banking Partner', logo: '/images/Partners/National Bank Ltd Partner.png' },
