@@ -102,8 +102,25 @@ const publications = [
 
 const conferences = [
   {
+    year: '2026',
+    items: [
+      {
+        title: '6th International Public Health Conference',
+        authors: 'AIMS Pakistan & Diabetes Association KP',
+        conference: 'Peshawar, Pakistan - February 4th & 5th, 2026',
+        code: 'Completed',
+      },
+    ],
+  },
+  {
     year: '2025',
     items: [
+      {
+        title: '5th International Public Health Conference',
+        authors: 'AIMS Pakistan & Diabetes Association KP',
+        conference: 'Peshawar, Pakistan - April 9th & 10th, 2025',
+        code: 'Completed',
+      },
       {
         title: 'Comprehensive Free Diabetes Care in Rural Pakistan',
         authors: 'A. HASAN, L. Ali, S. Tanveer, S. Zia',
