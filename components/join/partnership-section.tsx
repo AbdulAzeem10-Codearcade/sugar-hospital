@@ -10,7 +10,7 @@ const partners = [
   { name: 'National Bank Ltd', category: 'Banking Partner', logo: '/images/Partners/National Bank Ltd Partner.png' },
   { name: 'Aitemad Banking', category: 'Financial Services', logo: '/images/Partners/images.jpeg' },
   { name: 'Martin Dow', category: 'Pharmaceutical Partner', logo: '/images/Partners/Martin Dow Partner.png' },
-  { name: 'Merker', category: 'Healthcare Partner', logo: '/images/Partners/MERKER.png' },
+  { name: 'Mercer', category: 'Healthcare Partner', logo: '/images/Partners/MERKER.png' },
   { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/images/Partners/Al khidmat Partner.png' },
   { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/images/Partners/meethi zindagi partner.jpg' },
   { name: 'Khyber Medical University', category: 'Academic Partner', logo: '/images/Partners/kmu logo.jpeg' },
@@ -66,7 +66,7 @@ export function PartnershipSection() {
                 }`}
                 style={{ transitionDelay: `${(index + 2) * 100}ms` }}
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md">
+                <div className="w-16 h-16 bg-linear-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md">
                   <type.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-bold text-[#3F4A7A] mb-2">{type.title}</h3>
