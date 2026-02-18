@@ -50,7 +50,7 @@ const events = [
     category: 'Sponsorship'
   },
   {
-    date: 'Ongoing',
+    date: '2025',
     title: 'Baitak School Network Health Initiative',
     location: 'Schools across KP',
     description: 'Collaborative health education program with Baitak School Network, conducting diabetes awareness sessions, health screenings, and nutritional guidance for students and staff. Building healthy habits from an early age.',
@@ -123,11 +123,6 @@ export function EventsSection() {
                     </div>
                   )}
                 </div>
-
-                <Button size="sm" variant="outline" className="border-[#A34C55] text-[#A34C55] hover:bg-[#A34C55] hover:text-white bg-transparent w-full">
-                  Learn More
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
               </div>
             </div>
           ))}
