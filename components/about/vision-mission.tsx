@@ -7,7 +7,7 @@ export function VisionMission() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section ref={ref} id="vision-mission" className="py-20 bg-white">
+    <section ref={ref} id="vision-mission" className="py-20 bg-white scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Vision */}

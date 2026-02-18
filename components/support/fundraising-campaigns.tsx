@@ -7,7 +7,7 @@ export function FundraisingCampaigns() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>()
 
   return (
-    <section ref={ref} id="campaigns" className="py-20 bg-[#F4F6F8]">
+    <section ref={ref} id="campaigns" className="py-20 bg-[#F4F6F8] scroll-mt-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className={`text-3xl md:text-4xl font-bold text-[#3F4A7A] mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
