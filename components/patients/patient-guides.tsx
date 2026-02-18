@@ -104,9 +104,12 @@ export function PatientGuides() {
                   size="sm"
                   variant="outline"
                   className="border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white bg-transparent"
+                  asChild
                 >
-                  <Download className="w-4 h-4 mr-2" />
-                  Download PDF
+                  <a href={`/pdfs/patient-guides/${guide.title.toLowerCase().replace(/\s+/g, '-')}.pdf`} download>
+                    <Download className="w-4 h-4 mr-2" />
+                    Download PDF
+                  </a>
                 </Button>
               ) : (
                 <Button
