@@ -6,24 +6,24 @@ import { Button } from '@/components/ui/button'
 
 const auditReports = [
   {
-    year: '2025',
-    title: 'Annual Audit Report 2025',
-    description: 'Comprehensive financial audit and compliance report for fiscal year 2025',
+    year: '2022-2025',
+    title: 'Annual Audit Report 2022-2025',
+    description: 'Comprehensive financial audit and compliance report for fiscal years 2022-2025',
     date: 'January 2026',
     status: 'Latest',
   },
   {
-    year: '2024',
-    title: 'Annual Audit Report 2024',
-    description: 'Comprehensive financial audit and compliance report for fiscal year 2024',
-    date: 'January 2025',
+    year: '2019-2021',
+    title: 'Annual Audit Report 2019-2021',
+    description: 'Comprehensive financial audit and compliance report for fiscal years 2019-2021',
+    date: 'January 2022',
     status: 'Available',
   },
   {
-    year: '2023',
-    title: 'Annual Audit Report 2023',
-    description: 'Comprehensive financial audit and compliance report for fiscal year 2023',
-    date: 'January 2024',
+    year: '2016-2019',
+    title: 'Annual Audit Report 2016-2019',
+    description: 'Comprehensive financial audit and compliance report for fiscal years 2016-2019',
+    date: 'January 2020',
     status: 'Available',
   },
 ]
@@ -88,7 +88,7 @@ export function AuditReports() {
                       className="bg-[#5F9ED1] hover:bg-[#3F4A7A] text-white"
                       asChild
                     >
-                      <a href="#" download>
+                      <a href={`/pdfs/audit-reports/audit-report-${report.year}.pdf`} download>
                         <Download className="w-4 h-4 mr-2" />
                         Download PDF
                       </a>

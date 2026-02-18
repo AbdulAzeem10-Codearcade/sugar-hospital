@@ -101,7 +101,7 @@ export function Awards() {
                     className="border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white bg-transparent h-8"
                     asChild
                   >
-                    <a href="#" download>
+                    <a href={`/pdfs/certifications/${item.title.toLowerCase().replace(/\s+/g, '-')}.pdf`} download>
                       <Download className="w-3 h-3 mr-1" />
                       PDF
                     </a>

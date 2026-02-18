@@ -134,7 +134,7 @@ export function ConferencePresentations() {
                       className="border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white bg-transparent"
                       asChild
                     >
-                      <a href="#" download>
+                      <a href={`/pdfs/conferences/conference-${conference.year}.pdf`} download>
                         <Download className="w-4 h-4 mr-2" />
                         Download Proceedings
                       </a>
