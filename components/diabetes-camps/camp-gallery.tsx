@@ -7,8 +7,33 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 
 const campImages = [
   {
-    src: '/images/camp pictures/Swabi camp dec 25.jpg',
+    src: '/images/camp pictures/Swabi camp 1 dec 25.jpg',
     title: 'Swabi Community Camp',
+    location: 'Swabi, KP'
+  },
+  {
+    src: '/images/camp pictures/Swabi Camp 2 dec 25.jpg',
+    title: 'Swabi Health Screening',
+    location: 'Swabi, KP'
+  },
+  {
+    src: '/images/camp pictures/Swabi Camp 3 dec 25.jpg',
+    title: 'Community Health Services',
+    location: 'Swabi, KP'
+  },
+  {
+    src: '/images/camp pictures/Swabi CAmp 4 dec 25.jpg',
+    title: 'Medical Consultation',
+    location: 'Swabi, KP'
+  },
+  {
+    src: '/images/camp pictures/Swabi Camp 5 dec 25.jpg',
+    title: 'Community Engagement',
+    location: 'Swabi, KP'
+  },
+  {
+    src: '/images/camp pictures/Swabi Camp 6 dec 25.jpg',
+    title: 'Health Education Session',
     location: 'Swabi, KP'
   },
   {
@@ -27,16 +52,6 @@ const campImages = [
     location: 'Mander, KP'
   },
   {
-    src: '/images/camp pictures/Swabi Camp 2 dec 25.jpg',
-    title: 'Swabi Health Screening',
-    location: 'Swabi, KP'
-  },
-  {
-    src: '/images/camp pictures/Swabi Camp 3 dec 25.jpg',
-    title: 'Community Health Services',
-    location: 'Swabi, KP'
-  },
-  {
     src: '/images/camp pictures/IMG-20251218-WA0020.jpg',
     title: 'Mobile Health Unit',
     location: 'Rural KP'
@@ -50,21 +65,6 @@ const campImages = [
     src: '/images/camp pictures/IMG-20251218-WA0023.jpg',
     title: 'Health Screening Services',
     location: 'Community Outreach'
-  },
-  {
-    src: '/images/camp pictures/IMG-20251218-WA0025.jpg',
-    title: 'Medical Team at Work',
-    location: 'Field Camp'
-  },
-  {
-    src: '/images/camp pictures/Swabi Camp 5 dec 25.jpg',
-    title: 'Community Engagement',
-    location: 'Swabi, KP'
-  },
-  {
-    src: '/images/camp pictures/Swabi Camp 6 dec 25.jpg',
-    title: 'Health Education Session',
-    location: 'Swabi, KP'
   }
 ]
 
@@ -123,6 +123,9 @@ export function CampGallery() {
                 alt={image.title}
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                quality={75}
+                loading="lazy"
               />
               
               {/* Hover Overlay */}
@@ -173,6 +176,9 @@ export function CampGallery() {
                 alt={campImages[selectedImage].title}
                 fill
                 className="object-contain"
+                sizes="(max-width: 1280px) 100vw, 1280px"
+                quality={85}
+                priority
               />
             </div>
             <div className="text-center mt-4">
