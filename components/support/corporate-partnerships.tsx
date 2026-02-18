@@ -15,7 +15,7 @@ const partners = [
   { name: 'KMU', logo: '/images/Partners/kmu logo.jpeg' },
   { name: 'Edhi Foundation', logo: '/images/Partners/Edhi partner.png' },
   { name: 'Life for a Child', logo: '/images/Partners/Life for a Child Partner.png' },
-  { name: 'Mercer', logo: '/images/Partners/MERCER.png' },
+  { name: 'Mercer', logo: '/images/Partners/MERKER.png' },
   { name: 'CCL Pharma', logo: '/images/Partners/CCL-logo.png' },
   { name: 'Aitemad Banking', logo: '/images/Partners/images.jpeg' },
 ]
