@@ -22,6 +22,7 @@ const navigation = [
       { name: 'Our Story', href: '/about#our-story' },
       { name: 'Our Leadership', href: '/about#leadership' },
       { name: 'Audit Reports', href: '/about#audit-reports' },
+      { name: 'Community Outreach Camps', href: '/about/community-camps' },
       { name: 'Facts & Statistics', href: '/about#statistics' },
       { name: 'Our Partners', href: '/about#partners' },
       { name: 'Testimonials', href: '/about#testimonials' },
@@ -45,7 +46,6 @@ const navigation = [
       { name: 'Clinical Services', href: '/services#clinical' },
       { name: 'Diagnostic Services', href: '/services#diagnostic' },
       { name: 'Pharmacy', href: '/services#pharmacy' },
-      { name: 'Projects – Community Outreach Camps', href: '/services/community-camps' },
     ],
   },
   {

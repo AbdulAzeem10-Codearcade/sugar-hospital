@@ -133,7 +133,7 @@ export function PharmacySection() {
               variant="outline"
               className="border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white bg-transparent shrink-0"
             >
-              <Link href="/services/community-camps">
+              <Link href="/about/community-camps">
                 View Camps
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
