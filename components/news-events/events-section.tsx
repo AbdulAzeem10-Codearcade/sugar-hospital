@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { Button } from '@/components/ui/button'
@@ -7,29 +8,55 @@ import { Calendar, MapPin, Clock, Users, ArrowRight } from 'lucide-react'
 
 const events = [
   {
-    date: 'March 15, 2024',
-    time: '9:00 AM - 5:00 PM',
-    title: 'Diabetes Awareness Seminar',
-    location: 'Sugar Hospital Main Auditorium',
-    attendees: '200+ Expected',
-    description: 'Educational seminar on diabetes prevention and management for healthcare professionals',
+    date: 'November 9, 2025',
+    title: 'Jwand Khog De Cricket Fundraising Tournament',
+    location: 'Cricket Ground, Peshawar',
+    description: 'Join us for an exciting cricket tournament fundraiser supporting diabetes care initiatives. "Jwand Khog De" (Life is Sweet) campaign brings together sports and healthcare awareness to raise funds for underprivileged diabetic patients.',
+    image: '/images/events/jwandkhogde.jpeg',
+    category: 'Fundraising'
   },
   {
-    date: 'March 22, 2024',
-    time: '8:00 AM - 2:00 PM',
-    title: 'Community Health Camp - District Peshawar',
-    location: 'Community Center, Peshawar',
-    attendees: '300+ Expected',
-    description: 'Free diabetes screening, consultation, and medication distribution',
+    date: 'November 15, 2025',
+    title: 'Life is Sweet - Diabetes Awareness Campaign',
+    location: 'Multiple Locations, KP',
+    description: 'A comprehensive diabetes awareness and screening campaign across Khyber Pakhtunkhwa. Free health screenings, educational sessions, and community engagement activities to promote diabetes prevention and management.',
+    image: '/images/events/lifeissweet.jpeg',
+    category: 'Awareness Campaign'
   },
   {
-    date: 'April 5, 2024',
-    time: '10:00 AM - 4:00 PM',
-    title: 'Medical Conference on Endocrinology',
-    location: 'Sugar Hospital Conference Hall',
-    attendees: '150+ Professionals',
-    description: 'Latest research and treatment approaches in diabetes and endocrine disorders',
+    date: 'February 4, 2026',
+    title: 'KMU Medical Conference on Diabetes & Endocrinology',
+    location: 'Khyber Medical University, Peshawar',
+    attendees: '200+ Healthcare Professionals',
+    description: 'Annual medical conference in collaboration with Khyber Medical University featuring latest research, treatment protocols, and innovations in diabetes care and endocrine disorders. CME credits available.',
+    image: '/images/events/kmuconference.jpeg',
+    category: 'Medical Conference'
   },
+  {
+    date: '2024',
+    title: 'Mega Health Screening Camp',
+    location: 'Community Centers, KP',
+    attendees: '1000+ Screened',
+    description: 'Large-scale community health screening initiative providing free diabetes testing, blood pressure monitoring, and health consultations. Part of our ongoing commitment to preventive healthcare and early detection.',
+    image: '/images/events/Megahealthscreening.jpeg',
+    category: 'Health Camp'
+  },
+  {
+    date: '2024',
+    title: 'IKMUN - International Khyber Model United Nations',
+    location: 'Peshawar',
+    description: 'Sugar Hospital proudly sponsored IKMUN 2024, supporting youth leadership and global health discussions. Our participation emphasized the importance of healthcare accessibility and diabetes awareness in international forums.',
+    image: '/images/events/IKMUN.jpeg',
+    category: 'Sponsorship'
+  },
+  {
+    date: 'Ongoing',
+    title: 'Baitak School Network Health Initiative',
+    location: 'Schools across KP',
+    description: 'Collaborative health education program with Baitak School Network, conducting diabetes awareness sessions, health screenings, and nutritional guidance for students and staff. Building healthy habits from an early age.',
+    image: '/images/events/Baitakschoolnetworkevent.jpeg',
+    category: 'Education Program'
+  }
 ]
 
 export function EventsSection() {
@@ -47,47 +74,60 @@ export function EventsSection() {
           </h2>
         </div>
 
-        <div className="space-y-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-7xl mx-auto">
           {events.map((event, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl p-8 hover:shadow-lg border border-[#E2E2E2] hover:border-[#A34C55] transition-all duration-500 ${
-                isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
+              className={`bg-white rounded-xl overflow-hidden hover:shadow-xl border border-[#E2E2E2] hover:border-[#A34C55] transition-all duration-500 group ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${(index + 2) * 100}ms` }}
             >
-              <div className="flex flex-col lg:flex-row gap-6">
-                <div className="lg:w-48 shrink-0">
-                  <div className="bg-gradient-to-br from-[#A34C55] to-[#8E3F47] rounded-xl p-6 text-white text-center">
-                    <div className="text-3xl font-bold mb-1">{event.date.split(' ')[1].replace(',', '')}</div>
-                    <div className="text-sm opacity-90">{event.date.split(' ')[0]} {event.date.split(' ')[2]}</div>
-                  </div>
+              {/* Event Image */}
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={80}
+                />
+                <div className="absolute top-4 right-4 bg-[#A34C55] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  {event.category}
+                </div>
+              </div>
+
+              {/* Event Content */}
+              <div className="p-6">
+                <div className="flex items-center gap-2 text-[#A34C55] mb-3">
+                  <Calendar className="w-5 h-5" />
+                  <span className="font-bold text-lg">{event.date}</span>
                 </div>
                 
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-[#3F4A7A] mb-3">{event.title}</h3>
-                  <p className="text-[#8A8A8A] mb-4">{event.description}</p>
-                  
-                  <div className="grid sm:grid-cols-3 gap-4 mb-4">
-                    <div className="flex items-center gap-2 text-sm text-[#8A8A8A]">
-                      <Clock className="w-4 h-4 text-[#5F9ED1]" />
-                      <span>{event.time}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-[#8A8A8A]">
-                      <MapPin className="w-4 h-4 text-[#5F9ED1]" />
-                      <span>{event.location}</span>
-                    </div>
+                <h3 className="text-xl font-bold text-[#3F4A7A] mb-3 group-hover:text-[#A34C55] transition-colors">
+                  {event.title}
+                </h3>
+                
+                <p className="text-[#8A8A8A] mb-4 line-clamp-3">{event.description}</p>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-[#8A8A8A]">
+                    <MapPin className="w-4 h-4 text-[#5F9ED1]" />
+                    <span>{event.location}</span>
+                  </div>
+                  {event.attendees && (
                     <div className="flex items-center gap-2 text-sm text-[#8A8A8A]">
                       <Users className="w-4 h-4 text-[#5F9ED1]" />
                       <span>{event.attendees}</span>
                     </div>
-                  </div>
-
-                  <Button size="sm" variant="outline" className="border-[#A34C55] text-[#A34C55] hover:bg-[#A34C55] hover:text-white bg-transparent">
-                    Register Now
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  )}
                 </div>
+
+                <Button size="sm" variant="outline" className="border-[#A34C55] text-[#A34C55] hover:bg-[#A34C55] hover:text-white bg-transparent w-full">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
               </div>
             </div>
           ))}
