@@ -1,19 +1,29 @@
 "use client"
 
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { Handshake, Building, Heart, Users, Mail } from 'lucide-react'
+import { Building, Heart, Users, Mail } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+"use client"
+
+import Image from 'next/image'
+import { useScrollReveal } from '@/hooks/use-scroll-reveal'
+import { Building, Heart, Users, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const partners = [
-  { name: 'Hilton Pharma', category: 'Pharmaceutical Partner', logo: '/placeholder-logo.png' },
-  { name: 'National Bank Ltd', category: 'Banking Partner', logo: '/placeholder-logo.png' },
-  { name: 'Aitemad Banking', category: 'Financial Services', logo: '/placeholder-logo.png' },
-  { name: 'Martin Dow', category: 'Pharmaceutical Partner', logo: '/placeholder-logo.png' },
-  { name: 'Merker', category: 'Healthcare Partner', logo: '/placeholder-logo.png' },
-  { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/placeholder-logo.png' },
-  { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/placeholder-logo.png' },
-  { name: 'Khyber Medical University', category: 'Academic Partner', logo: '/placeholder-logo.png' },
-  { name: 'CCL Pharma', category: 'Pharmaceutical Partner', logo: '/placeholder-logo.png' },
+  { name: 'Hilton Pharma', category: 'Pharmaceutical Partner', logo: '/images/Partners/Hilton Pharma partner.png' },
+  { name: 'National Bank Ltd', category: 'Banking Partner', logo: '/images/Partners/National Bank Ltd Partner.png' },
+  { name: 'Aitemad Banking', category: 'Financial Services', logo: '/images/Partners/images.jpeg' },
+  { name: 'Martin Dow', category: 'Pharmaceutical Partner', logo: '/images/Partners/Martin Dow Partner.png' },
+  { name: 'Merker', category: 'Healthcare Partner', logo: '/images/Partners/MERKER.png' },
+  { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/images/Partners/Al khidmat Partner.png' },
+  { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/images/Partners/meethi zindagi partner.jpg' },
+  { name: 'Khyber Medical University', category: 'Academic Partner', logo: '/images/Partners/kmu logo.jpeg' },
+  { name: 'CCL Pharma', category: 'Pharmaceutical Partner', logo: '/images/Partners/CCL-logo.png' },
+  { name: 'Edhi Foundation', category: 'Charitable Organization', logo: '/images/Partners/Edhi partner.png' },
+  { name: 'Life for a Child', category: 'International NGO', logo: '/images/Partners/Life for a Child Partner.png' },
 ]
 
 const partnershipTypes = [
@@ -84,9 +94,17 @@ export function PartnershipSection() {
                   }`}
                   style={{ transitionDelay: `${(index + 5) * 50}ms` }}
                 >
-                  {/* Logo Placeholder */}
-                  <div className="w-full h-24 bg-[#F4F6F8] rounded-lg flex items-center justify-center mb-4 border border-[#E2E2E2]">
-                    <Handshake className="w-12 h-12 text-[#5F9ED1]" />
+                  {/* Logo */}
+                  <div className="relative w-32 h-32 mx-auto mb-4">
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      fill
+                      className="object-contain"
+                      sizes="128px"
+                      quality={75}
+                      loading="lazy"
+                    />
                   </div>
                   <h3 className="text-lg font-bold text-[#3F4A7A] mb-1">{partner.name}</h3>
                   <p className="text-[#8A8A8A] text-sm">{partner.category}</p>

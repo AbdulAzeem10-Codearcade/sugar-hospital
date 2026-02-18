@@ -109,7 +109,8 @@ export function Leadership() {
                       fill
                       className="object-cover"
                       sizes="128px"
-                      quality={95}
+                      quality={75}
+                      priority={index < 3}
                     />
                   </div>
                   <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{member.name}</h3>
@@ -143,7 +144,7 @@ export function Leadership() {
                       fill
                       className="object-cover"
                       sizes="112px"
-                      quality={95}
+                      quality={75}
                     />
                   </div>
                   <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{role.name}</h3>

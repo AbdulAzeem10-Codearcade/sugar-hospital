@@ -43,7 +43,8 @@ export function PartnersSection() {
                   fill
                   className="object-contain"
                   sizes="128px"
-                  quality={95}
+                  quality={80}
+                  loading="lazy"
                 />
               </div>
             </div>

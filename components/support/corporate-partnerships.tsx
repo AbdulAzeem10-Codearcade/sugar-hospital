@@ -1,9 +1,24 @@
 "use client"
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { Button } from '@/components/ui/button'
 import { Building, Handshake, Award, ArrowRight } from 'lucide-react'
+
+const partners = [
+  { name: 'Hilton Pharma', logo: '/images/Partners/Hilton Pharma partner.png' },
+  { name: 'National Bank Ltd', logo: '/images/Partners/National Bank Ltd Partner.png' },
+  { name: 'Martin Dow', logo: '/images/Partners/Martin Dow Partner.png' },
+  { name: 'Al-Khidmat', logo: '/images/Partners/Al khidmat Partner.png' },
+  { name: 'Meethi Zindagi', logo: '/images/Partners/meethi zindagi partner.jpg' },
+  { name: 'KMU', logo: '/images/Partners/kmu logo.jpeg' },
+  { name: 'Edhi Foundation', logo: '/images/Partners/Edhi partner.png' },
+  { name: 'Life for a Child', logo: '/images/Partners/Life for a Child Partner.png' },
+  { name: 'Merker', logo: '/images/Partners/MERKER.png' },
+  { name: 'CCL Pharma', logo: '/images/Partners/CCL-logo.png' },
+  { name: 'Aitemad Banking', logo: '/images/Partners/images.jpeg' },
+]
 
 export function CorporatePartnerships() {
   const { ref, isVisible } = useScrollReveal<HTMLElement>()
@@ -39,6 +54,32 @@ export function CorporatePartnerships() {
                 <p className="text-[#8A8A8A] text-sm">{benefit.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* Partner Logos */}
+          <div className={`mb-12 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <h3 className="text-xl font-bold text-[#3F4A7A] mb-6 text-center">Our Trusted Partners</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {partners.map((partner, index) => (
+                <div
+                  key={partner.name}
+                  className="bg-[#F4F6F8] rounded-lg p-4 hover:shadow-md transition-all duration-300 flex items-center justify-center"
+                  style={{ transitionDelay: `${(index + 5) * 30}ms` }}
+                >
+                  <div className="relative w-24 h-24">
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      fill
+                      className="object-contain"
+                      sizes="96px"
+                      quality={75}
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className={`bg-gradient-to-r from-[#5F9ED1] to-[#3F4A7A] rounded-2xl p-8 text-white text-center transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>

@@ -54,7 +54,8 @@ export function Partnerships() {
                       fill
                       className="object-contain p-2"
                       sizes="160px"
-                      quality={95}
+                      quality={80}
+                      loading="lazy"
                     />
                   </div>
                 ) : (

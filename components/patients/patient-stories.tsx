@@ -94,7 +94,7 @@ export function PatientStories() {
                       fill
                       className="object-cover"
                       sizes="64px"
-                      quality={95}
+                      quality={75}
                     />
                   </div>
                   <div>

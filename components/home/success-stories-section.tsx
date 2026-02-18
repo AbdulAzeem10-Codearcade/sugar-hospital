@@ -79,7 +79,8 @@ export function SuccessStoriesSection() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  quality={95}
+                  quality={75}
+                  priority
                 />
               </div>
               {/* Quote icon */}
