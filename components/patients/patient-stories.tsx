@@ -13,7 +13,7 @@ const stories = [
     condition: 'Type 2 Diabetes Management',
     story: 'Managing diabetes was overwhelming until I joined the diabetes care program at AIMS. The doctors and nutritionists created a personalized plan that has transformed my health. My blood sugar is now under control, and I feel healthier than ever.',
     location: 'Mardan',
-    image: '/images/patients/AIMS-Sugar-Hospital-Patient1A.jpg',
+    image: '/images/patients/Fatima BiBi.jpg',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const stories = [
     condition: 'Diabetic Foot Care',
     story: 'I was suffering from diabetic foot complications and feared amputation. The podiatry team at AIMS provided exceptional care and saved my foot. Their expertise in diabetic foot care is truly remarkable. I can walk pain-free now.',
     location: 'Peshawar',
-    image: '/images/patients/Copy of _MG_1233 (1).jpg',
+    image: '/images/patients/Ahmed khan.jpg',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const stories = [
     condition: 'Gestational Diabetes',
     story: 'My pregnancy was complicated by gestational diabetes, and I was scared. The maternity and diabetes team at AIMS provided exceptional care throughout my journey. They monitored me closely and ensured a safe delivery. My baby and I are healthy.',
     location: 'Nowshera',
-    image: '/images/patients/IMG-20251218-WA0027.jpg',
+    image: '/images/patients/Ayesha gul.jpg',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const stories = [
     condition: 'Type 1 Diabetes',
     story: 'Living with Type 1 diabetes was challenging until I found AIMS Pakistan. The endocrinology team helped me understand insulin management and lifestyle changes. Their continuous support has given me confidence to live a normal, active life.',
     location: 'Swat',
-    image: '/images/patients/Swabi CAmp 4 dec 25.jpg',
+    image: '/images/patients/Muhammad imran.jpg',
   },
 ]
 

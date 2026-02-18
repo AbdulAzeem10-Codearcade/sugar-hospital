@@ -10,24 +10,24 @@ import { ChevronLeft, ChevronRight, Quote, ArrowRight } from 'lucide-react'
 const stories = [
   {
     id: 1,
-    name: 'Fatima Khan',
+    name: 'Fatima Bibi',
     condition: 'Type 2 Diabetes',
     story: 'Managing diabetes seemed impossible until I found AIMS Pakistan. Their comprehensive care program and dedicated team helped me take control of my health and live a fulfilling life.',
-    image: '/images/patients/AIMS-Sugar-Hospital-Patient1A.jpg',
+    image: '/images/patients/Fatima BiBi.jpg',
   },
   {
     id: 2,
-    name: 'Ahmed Hassan',
+    name: 'Ahmed Khan',
     condition: 'Diabetic Retinopathy',
     story: 'The ophthalmology team at AIMS saved my vision. Their expertise in treating diabetic eye complications is exceptional. I received timely treatment and my eyesight is now stable. Forever grateful.',
-    image: '/images/patients/Swabi Camp 6 dec 25.jpg',
+    image: '/images/patients/Ahmed khan.jpg',
   },
   {
     id: 3,
-    name: 'Mohammad Ali',
+    name: 'Muhammad Imran',
     condition: 'Diabetic Neuropathy',
     story: 'I was suffering from severe nerve pain due to diabetes. The specialized care at AIMS helped manage my condition effectively. The pain management program has significantly improved my quality of life.',
-    image: '/images/patients/Copy of _MG_1233 (1).jpg',
+    image: '/images/patients/Muhammad imran.jpg',
   },
 ]
 
