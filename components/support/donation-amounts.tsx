@@ -11,7 +11,7 @@ const donationItems = [
   { icon: Footprints, name: 'Foot Care', amount: 'Rs 1,500', color: 'bg-[#A34C55]' },
   { icon: Smile, name: 'Dental Care', amount: 'Rs 3,000', color: 'bg-[#3F4A7A]' },
   { icon: Users, name: 'Children with Diabetes', amount: 'Rs 3,000', color: 'bg-[#5F9ED1]' },
-  { icon: Building2, name: 'AIMS Zakat (One Camp)', amount: 'Rs 200,000', description: '(2 Lac PKR)', color: 'bg-[#A34C55]' },
+  { icon: Building2, name: 'AIMS Medical Camp (One Camp)', amount: 'Rs 200,000', description: '(2 Lac PKR)', color: 'bg-[#A34C55]' },
 ]
 
 export function DonationAmounts() {
