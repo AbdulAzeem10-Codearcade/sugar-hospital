@@ -223,7 +223,7 @@ export function DonationDetails() {
             <p className="text-[#8A8A8A] text-sm leading-relaxed">
               <strong className="text-[#3F4A7A]">Note:</strong> After making your donation, please send us a screenshot 
               or transaction details via WhatsApp at <strong className="text-[#3F4A7A]">0301-1155713</strong> or 
-              email at <strong className="text-[#3F4A7A]">admin@sugarhospital.com</strong> for acknowledgment and receipt.
+              email at <a href="mailto:admin@sugarhospital.com" className="text-[#5F9ED1] font-bold hover:underline">admin@sugarhospital.com</a> for acknowledgment and receipt.
             </p>
           </div>
         </div>

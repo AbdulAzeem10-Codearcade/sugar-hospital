@@ -54,7 +54,7 @@ export function ContactHero() {
               <Mail className="w-6 h-6 text-white" />
             </div>
             <div className="text-white/80 text-sm mb-1">Email</div>
-            <div className="text-white font-semibold text-sm">admin@sugarhospital.com</div>
+            <a href="mailto:admin@sugarhospital.com" className="text-white font-semibold text-sm hover:underline">admin@sugarhospital.com</a>
             <div className="text-white/60 text-xs mt-1">Complaints</div>
           </div>
         </div>

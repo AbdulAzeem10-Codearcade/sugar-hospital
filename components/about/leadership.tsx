@@ -14,11 +14,11 @@ const boardMembers = [
 ]
 
 const management = [
-  { title: 'Medical Director', department: 'Clinical Operations' },
-  { title: 'Manager Operations', department: 'Hospital Management' },
-  { title: 'Manager Finance', department: 'Financial Management' },
-  { title: 'Manager Projects', department: 'Project Development' },
-  { title: 'Assistant Ops Manager Network', department: 'Network Coordination' },
+  { name: 'Prof. Dr. Rooh-ul-Muqim', title: 'Medical Director', department: 'Clinical Operations' },
+  { name: 'Mr. Salman Zaman', title: 'Manager Ops', department: 'Hospital Management' },
+  { name: 'Mr. Raza Khattak', title: 'Manager Finance', department: 'Financial Management' },
+  { name: 'Mr. Joba Tanveer', title: 'Manager Projects', department: 'Project Development' },
+  { name: 'Mr. Muhammad Akhtar', title: 'Assistant Manager Ops', department: 'Operations Support' },
 ]
 
 export function Leadership() {
@@ -65,17 +65,18 @@ export function Leadership() {
           <div className={`transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#3F4A7A] mb-4">
-                Management - SGH BOD
+                Management
               </h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {management.map((role, index) => (
                 <div
-                  key={role.title}
+                  key={role.name}
                   className="bg-white rounded-xl p-6 border-2 border-[#E2E2E2] hover:border-[#5F9ED1] hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-2">{role.title}</h3>
+                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-1">{role.name}</h3>
+                  <p className="text-[#5F9ED1] font-medium text-sm mb-2">{role.title}</p>
                   <p className="text-[#8A8A8A] text-sm">{role.department}</p>
                 </div>
               ))}
