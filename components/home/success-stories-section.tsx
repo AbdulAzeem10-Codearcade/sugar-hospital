@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
@@ -43,6 +43,15 @@ export function SuccessStoriesSection() {
     setCurrentStory((prev) => (prev - 1 + stories.length) % stories.length)
   }
 
+  // Auto-rotate stories every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextStory()
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [currentStory])
+
   return (
     <section ref={ref} className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -71,16 +80,17 @@ export function SuccessStoriesSection() {
         <div className={`relative transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Image */}
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4F6F8] relative">
+            <div className="relative" key={`story-image-${currentStory}`}>
+              <div className="aspect-4/3 rounded-2xl overflow-hidden bg-[#F4F6F8] relative">
                 <Image
                   src={stories[currentStory].image}
                   alt={stories[currentStory].name}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-opacity duration-500"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   quality={75}
                   priority
+                  key={stories[currentStory].id}
                 />
               </div>
               {/* Quote icon */}
@@ -90,7 +100,7 @@ export function SuccessStoriesSection() {
             </div>
 
             {/* Content */}
-            <div className="lg:pl-8">
+            <div className="lg:pl-8" key={`story-content-${currentStory}`}>
               <div className="bg-[#F4F6F8] rounded-2xl p-8">
                 <p className="text-lg text-[#3F4A7A] leading-relaxed mb-6 italic">
                   &ldquo;{stories[currentStory].story}&rdquo;
