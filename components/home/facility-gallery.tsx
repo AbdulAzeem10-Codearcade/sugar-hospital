@@ -14,7 +14,7 @@ const facilityImages = [
   },
   {
     src: '/images/Sugar hospital building images/SGH image.jpg',
-    title: 'Hospital Exterior',
+    title: 'Main Building',
     category: 'Facility'
   },
   {
@@ -28,9 +28,15 @@ const facilityImages = [
     category: 'Services'
   },
   {
-    src: '/images/Sugar hospital building images/old building .jpeg',
-    title: 'Hospital Campus',
-    category: 'Facility'
+    src: '/images/Sugar Hospital Staff/AIMS-Sugar-Hospital-Patient2A.jpg',
+    title: 'Hospital Staff',
+    category: 'Services'
+  },
+  
+  {
+    src: '/images/Sugar hospital building images/community.jpeg',
+    title: 'Community Outreach',
+    category: 'Community'
   }
 ]
 

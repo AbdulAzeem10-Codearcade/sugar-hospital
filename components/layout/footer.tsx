@@ -28,7 +28,7 @@ const socialLinks = [
   { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/diabeteshospitalpeshawar?mibextid=rS40aB7S9Ucbxw6v' },
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/aimssugarhospital?igsh=cHR3cHU2d3p5MjBz' },
   { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/aims-pakistan/' },
-  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@AIMSPakistan' },
+  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@aimspakistan7582' },
 ]
 
 export function Footer() {
