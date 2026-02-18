@@ -1,7 +1,8 @@
 "use client"
 
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { Award, Shield, FileCheck, Building, CheckCircle } from 'lucide-react'
+import { Award, Shield, FileCheck, Building, CheckCircle, Download } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 const accreditations = [
   {
@@ -14,7 +15,7 @@ const accreditations = [
     icon: FileCheck,
     title: 'PCP Certificate',
     description: 'Certificate of Philanthropy Centre of Pakistan, registered with Economic Affairs Division Islamabad',
-    number: 'EAD Registered',
+    number: 'Certified',
   },
   {
     icon: Building,
@@ -90,8 +91,21 @@ export function Awards() {
                 </div>
                 <h3 className="text-lg font-bold text-[#3F4A7A] mb-2">{item.title}</h3>
                 <p className="text-[#8A8A8A] text-sm mb-3 leading-relaxed">{item.description}</p>
-                <div className="inline-block px-3 py-1 bg-[#5F9ED1]/10 text-[#5F9ED1] text-xs font-medium rounded-full">
-                  {item.number}
+                <div className="flex items-center justify-between gap-3">
+                  <div className="inline-block px-3 py-1 bg-[#5F9ED1]/10 text-[#5F9ED1] text-xs font-medium rounded-full">
+                    {item.number}
+                  </div>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="border-[#5F9ED1] text-[#5F9ED1] hover:bg-[#5F9ED1] hover:text-white bg-transparent h-8"
+                    asChild
+                  >
+                    <a href="#" download>
+                      <Download className="w-3 h-3 mr-1" />
+                      PDF
+                    </a>
+                  </Button>
                 </div>
               </div>
             ))}

@@ -4,6 +4,7 @@ import { AboutHero } from '@/components/about/about-hero'
 import { VisionMission } from '@/components/about/vision-mission'
 import { OurStory } from '@/components/about/our-story'
 import { Leadership } from '@/components/about/leadership'
+import { AuditReports } from '@/components/about/audit-reports'
 import { FactsStats } from '@/components/about/facts-stats'
 import { Partnerships } from '@/components/about/partnerships'
 import { Testimonials } from '@/components/about/testimonials'
@@ -17,6 +18,7 @@ export default function AboutPage() {
         <VisionMission />
         <OurStory />
         <Leadership />
+        <AuditReports />
         <FactsStats />
         <Partnerships />
         <Testimonials />

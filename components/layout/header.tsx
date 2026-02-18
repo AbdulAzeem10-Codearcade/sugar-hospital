@@ -21,6 +21,7 @@ const navigation = [
       { name: 'Our Vision & Mission', href: '/about#vision-mission' },
       { name: 'Our Story', href: '/about#our-story' },
       { name: 'Our Leadership', href: '/about#leadership' },
+      { name: 'Audit Reports', href: '/about#audit-reports' },
       { name: 'Facts & Statistics', href: '/about#statistics' },
       { name: 'Our Partners', href: '/about#partners' },
       { name: 'Testimonials', href: '/about#testimonials' },
@@ -51,6 +52,7 @@ const navigation = [
     name: 'Healthcare Professionals',
     href: '/professionals',
     children: [
+      { name: 'Conference Presentations', href: '/professionals#conferences' },
       { name: 'Quality & Patient Safety', href: '/professionals#quality-policy' },
       { name: 'Awards & Recognitions', href: '/professionals#awards' },
       { name: 'Publications & Research', href: '/professionals#publications' },
@@ -71,12 +73,11 @@ const navigation = [
     name: 'Join Us',
     href: '/join',
     children: [
-      { name: 'Careers', href: '/join/careers' },
+      { name: 'Partnership Opportunities', href: '/join#partnership' },
       { name: 'Volunteer & Internship', href: '/join/volunteer' },
-      { name: 'Student Ambassador Programme', href: '/join/student-ambassador' },
     ],
   },
-  { name: 'News & Events', href: '/news-events' },
+  { name: 'Events', href: '/news-events' },
   { name: 'Contact Us', href: '/contact' },
 ]
 

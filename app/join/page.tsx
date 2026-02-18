@@ -1,15 +1,15 @@
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
-import { NewsEventsHero } from '@/components/news-events/news-events-hero'
-import { EventsSection } from '@/components/news-events/events-section'
+import { JoinHero } from '@/components/join/join-hero'
+import { PartnershipSection } from '@/components/join/partnership-section'
 
-export default function NewsEventsPage() {
+export default function JoinPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <NewsEventsHero />
-        <EventsSection />
+        <JoinHero />
+        <PartnershipSection />
       </main>
       <Footer />
     </div>

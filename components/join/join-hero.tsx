@@ -1,9 +1,9 @@
 "use client"
 
 import Link from 'next/link'
-import { ChevronRight, Newspaper, Calendar } from 'lucide-react'
+import { ChevronRight, Handshake } from 'lucide-react'
 
-export function NewsEventsHero() {
+export function JoinHero() {
   return (
     <section className="relative py-20 bg-gradient-to-br from-[#3F4A7A] via-[#3F4A7A]/95 to-[#5F9ED1]/80 overflow-hidden">
       <div className="absolute inset-0 bg-[url('/images/pattern.svg')] opacity-5" />
@@ -12,32 +12,21 @@ export function NewsEventsHero() {
         <nav className="flex items-center gap-2 text-white/70 text-sm mb-6 animate-fade-in-down">
           <Link href="/" className="hover:text-white transition-colors">Home</Link>
           <ChevronRight className="w-4 h-4" />
-          <span className="text-white">Events</span>
+          <span className="text-white">Join Us</span>
         </nav>
 
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
-            Events
+            Join Our Mission
           </h1>
           <p className="text-xl text-white/90 leading-relaxed animate-fade-in-up delay-200">
-            Stay updated with our upcoming events, conferences, and community programs
+            Partner with us to make a difference in diabetes care and community health
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 mt-12">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-fade-in-up delay-300">
-            <div className="w-12 h-12 bg-[#5F9ED1] rounded-xl flex items-center justify-center mb-4">
-              <Calendar className="w-6 h-6 text-white" />
-            </div>
-            <div className="text-white/80 text-sm mb-1">Upcoming Events</div>
-            <div className="text-white font-semibold">Conferences & Camps</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-fade-in-up delay-400">
-            <div className="w-12 h-12 bg-[#A34C55] rounded-xl flex items-center justify-center mb-4">
-              <Calendar className="w-6 h-6 text-white" />
-            </div>
-            <div className="text-white/80 text-sm mb-1">Community Programs</div>
-            <div className="text-white font-semibold">Health Camps & Screenings</div>
+        <div className="flex items-center justify-center mt-12 animate-fade-in-up delay-300">
+          <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+            <Handshake className="w-10 h-10 text-white" />
           </div>
         </div>
       </div>
