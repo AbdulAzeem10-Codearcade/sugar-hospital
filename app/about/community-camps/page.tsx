@@ -4,6 +4,7 @@ import { DiabetesCampsHero } from '@/components/diabetes-camps/diabetes-camps-he
 import { CampServicesSection } from '@/components/diabetes-camps/camp-services-section'
 import { CampProcessSection } from '@/components/diabetes-camps/camp-process-section'
 import { WhyItMattersSection } from '@/components/diabetes-camps/why-it-matters-section'
+import { CampGallery } from '@/components/diabetes-camps/camp-gallery'
 import { ImpactSection } from '@/components/diabetes-camps/impact-section'
 import { TeamSection } from '@/components/diabetes-camps/team-section'
 import { InspirationSection } from '@/components/diabetes-camps/inspiration-section'
@@ -17,6 +18,7 @@ export default function DiabetesCampsPage() {
         <CampServicesSection />
         <CampProcessSection />
         <WhyItMattersSection />
+        <CampGallery />
         <ImpactSection />
         <TeamSection />
         <InspirationSection />

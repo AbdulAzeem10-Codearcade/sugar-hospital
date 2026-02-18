@@ -1,18 +1,21 @@
 "use client"
 
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { Handshake, Building, Heart } from 'lucide-react'
 
 const partners = [
-  { name: 'Hilton Pharma', category: 'Pharmaceutical' },
-  { name: 'National Bank Ltd', category: 'Banking' },
+  { name: 'Hilton Pharma', category: 'Pharmaceutical', logo: '/images/Partners/Hilton Pharma partner.png' },
+  { name: 'National Bank Ltd', category: 'Banking', logo: '/images/Partners/National Bank Ltd Partner.png' },
   { name: 'Aitemad Banking', category: 'Financial Services' },
-  { name: 'Martin Dow', category: 'Pharmaceutical' },
+  { name: 'Martin Dow', category: 'Pharmaceutical', logo: '/images/Partners/Martin Dow Partner.png' },
   { name: 'Merker', category: 'Healthcare' },
-  { name: 'Al-Khidmat', category: 'Charitable Organization' },
-  { name: 'Meethi Zindagi', category: 'Diabetes Awareness' },
-  { name: 'Khyber Medical University', category: 'Academic' },
+  { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/images/Partners/Al khidmat Partner.png' },
+  { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/images/Partners/meethi zindagi partner.jpg' },
+  { name: 'Khyber Medical University', category: 'Academic', logo: '/images/Partners/kmu logo.jpeg' },
   { name: 'CCL Pharma', category: 'Pharmaceutical' },
+  { name: 'Edhi Foundation', category: 'Charitable Organization', logo: '/images/Partners/Edhi partner.png' },
+  { name: 'Life for a Child', category: 'International NGO', logo: '/images/Partners/Life for a Child Partner.png' },
 ]
 
 export function Partnerships() {
@@ -43,15 +46,26 @@ export function Partnerships() {
                 }`}
                 style={{ transitionDelay: `${(index + 2) * 50}ms` }}
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md">
-                  {partner.category === 'Pharmaceutical' || partner.category === 'Healthcare' ? (
-                    <Heart className="w-8 h-8 text-white" />
-                  ) : partner.category === 'Banking' || partner.category === 'Financial Services' ? (
-                    <Building className="w-8 h-8 text-white" />
-                  ) : (
-                    <Handshake className="w-8 h-8 text-white" />
-                  )}
-                </div>
+                {partner.logo ? (
+                  <div className="relative w-32 h-32 mx-auto mb-4">
+                    <Image
+                      src={partner.logo}
+                      alt={`${partner.name} logo`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center mb-4 mx-auto shadow-md">
+                    {partner.category === 'Pharmaceutical' || partner.category === 'Healthcare' ? (
+                      <Heart className="w-8 h-8 text-white" />
+                    ) : partner.category === 'Banking' || partner.category === 'Financial Services' ? (
+                      <Building className="w-8 h-8 text-white" />
+                    ) : (
+                      <Handshake className="w-8 h-8 text-white" />
+                    )}
+                  </div>
+                )}
                 <h3 className="text-lg font-bold text-[#3F4A7A] mb-2">{partner.name}</h3>
                 <p className="text-[#8A8A8A] text-sm">{partner.category}</p>
               </div>

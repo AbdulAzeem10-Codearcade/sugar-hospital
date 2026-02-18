@@ -1,24 +1,78 @@
 "use client"
 
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
-import { Users, Briefcase, DollarSign, Stethoscope, User } from 'lucide-react'
 
 const boardMembers = [
-  { name: 'Dr. Zia ul Hasan', position: 'President (Founder)', icon: Users, description: 'Sitara-e-Imtiaz 2019' },
-  { name: 'Asadullah Khan', position: 'Vice President', icon: Briefcase },
-  { name: 'Ayaz Mujahid', position: 'General Secretary', icon: User },
-  { name: 'Faisal Inam', position: 'Director Finance', icon: DollarSign },
-  { name: 'Abdul Jalil Khan', position: 'Director Medical', icon: Stethoscope },
-  { name: 'Muhammad Jawad', position: 'Member', icon: User },
-  { name: 'Saba Tanveer', position: 'Member', icon: User },
+  { 
+    name: 'Dr. Zia ul Hasan', 
+    position: 'President (Founder)', 
+    description: 'Sitara-e-Imtiaz 2019',
+    image: '/images/Directors/Profile-Dr-Zia-Picture-Date-AIMS-Sugar-Hospital-Dr Zia pic.jpg'
+  },
+  { 
+    name: 'Asadullah Khan', 
+    position: 'Vice President',
+    image: '/images/Directors/Asadullah Khan Director.jpg'
+  },
+  { 
+    name: 'Ayaz Mujahid', 
+    position: 'General Secretary',
+    image: '/images/Directors/Ayaz Mujahid.jpeg'
+  },
+  { 
+    name: 'Faisal Inam', 
+    position: 'Director Finance',
+    image: '/images/Directors/Faisal INam.jpeg'
+  },
+  { 
+    name: 'Dr. Abdul Jalil Khan', 
+    position: 'Director Medical',
+    image: '/images/Directors/Dr Abdul Jalil Direcot.jpg'
+  },
+  { 
+    name: 'Dr. Muhammad Jawad', 
+    position: 'Member',
+    image: '/images/Directors/Dr Muhammad Jawad.jpeg'
+  },
+  { 
+    name: 'Saba Tanveer', 
+    position: 'Member',
+    image: '/images/Directors/Saba Tanveer.jpg'
+  },
 ]
 
 const management = [
-  { name: 'Prof. Dr. Rooh-ul-Muqim', title: 'Medical Director', department: 'Clinical Operations' },
-  { name: 'Mr. Salman Zaman', title: 'Manager Ops', department: 'Hospital Management' },
-  { name: 'Mr. Raza Khattak', title: 'Manager Finance', department: 'Financial Management' },
-  { name: 'Mr. Joba Tanveer', title: 'Manager Projects', department: 'Project Development' },
-  { name: 'Mr. Muhammad Akhtar', title: 'Assistant Manager Ops', department: 'Operations Support' },
+  { 
+    name: 'Prof. Dr. Rooh-ul-Muqim', 
+    title: 'Medical Director', 
+    department: 'Clinical Operations',
+    image: '/images/Sugar Hospital Staff/Dr Rooh ul Muqim.jpg'
+  },
+  { 
+    name: 'Mr. Salman Zaman', 
+    title: 'Manager Ops', 
+    department: 'Hospital Management',
+    image: '/placeholder-user.jpg'
+  },
+  { 
+    name: 'Mr. Raza Khattak', 
+    title: 'Manager Finance', 
+    department: 'Financial Management',
+    image: '/placeholder-user.jpg'
+  },
+  { 
+    name: 'Mr. Joba Tanveer', 
+    title: 'Manager Projects', 
+    department: 'Project Development',
+    image: '/placeholder-user.jpg'
+  },
+  { 
+    name: 'Mr. Muhammad Akhtar', 
+    title: 'Assistant Manager Ops', 
+    department: 'Operations Support',
+    image: '/placeholder-user.jpg'
+  },
 ]
 
 export function Leadership() {
@@ -48,13 +102,18 @@ export function Leadership() {
                   }`}
                   style={{ transitionDelay: `${(index + 2) * 100}ms` }}
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#5F9ED1] to-[#3F4A7A] rounded-xl flex items-center justify-center mb-4 shadow-md">
-                    <member.icon className="w-8 h-8 text-white" />
+                  <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1] shadow-lg">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-1">{member.name}</h3>
-                  <p className="text-[#5F9ED1] font-medium text-sm mb-2">{member.position}</p>
+                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{member.name}</h3>
+                  <p className="text-[#5F9ED1] font-medium text-sm mb-2 text-center">{member.position}</p>
                   {member.description && (
-                    <p className="text-[#8A8A8A] text-sm">{member.description}</p>
+                    <p className="text-[#8A8A8A] text-sm text-center">{member.description}</p>
                   )}
                 </div>
               ))}
@@ -75,9 +134,17 @@ export function Leadership() {
                   key={role.name}
                   className="bg-white rounded-xl p-6 border-2 border-[#E2E2E2] hover:border-[#5F9ED1] hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-1">{role.name}</h3>
-                  <p className="text-[#5F9ED1] font-medium text-sm mb-2">{role.title}</p>
-                  <p className="text-[#8A8A8A] text-sm">{role.department}</p>
+                  <div className="relative w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#5F9ED1]">
+                    <Image
+                      src={role.image}
+                      alt={role.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#3F4A7A] mb-1 text-center">{role.name}</h3>
+                  <p className="text-[#5F9ED1] font-medium text-sm mb-2 text-center">{role.title}</p>
+                  <p className="text-[#8A8A8A] text-sm text-center">{role.department}</p>
                 </div>
               ))}
             </div>
