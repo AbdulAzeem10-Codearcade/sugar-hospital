@@ -19,12 +19,12 @@ const doctorCategories = [
     icon: Heart,
     color: 'bg-[#A34C55]',
     doctors: [
-      { name: 'Dr. Ghulam', specialty: 'Diabetes', fee: 'Rs. 1500' },
+      { name: 'Prof. Dr. Rooh ul Muqim', specialty: 'General Surgeon', fee: 'Rs. 1200' },
+      { name: 'Dr. Ghulam Farooq', specialty: 'Diabetes, Endocrine', fee: 'Rs. 1500' },
       { name: 'Dr. Muhammad Jawad', specialty: 'Medical & Diabetes Specialist', fee: 'Rs. 1500' },
       { name: 'Dr. Abdul Jalil', specialty: 'Diabetes', fee: 'Rs. 1500' },
-      { name: 'Dr. Shazia', specialty: 'Dermatologist Specialist', fee: 'Rs. 1000' },
+      { name: 'Dr. Shazia Naz', specialty: 'Dermatologist Specialist', fee: 'Rs. 1000' },
       { name: 'Dr. Talat Naz', specialty: 'Consultant Gynaecologist', fee: 'Rs. 1200' },
-      { name: 'Dr. Rooh ul Muqim', specialty: 'General Surgeon', fee: 'Rs. 1200' },
     ],
   },
   {
@@ -34,7 +34,7 @@ const doctorCategories = [
     doctors: [
       { name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Consultant Eye Surgeon', fee: 'Rs. 1500' },
       { name: 'Dr. Sadiya Hassan', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 500' },
-      { name: 'Dr. Sohail', specialty: 'Eye Physician / Vision Specialist', fee: 'Rs. 500' },
+      { name: 'Mr. Amir Sohail', specialty: 'Optometrist', fee: 'Rs. 500' },
     ],
   },
   {
@@ -44,6 +44,7 @@ const doctorCategories = [
     doctors: [
       { name: 'Hygiene Counseling', specialty: 'Free for OPD Patients', fee: 'Free' },
       { name: 'Foot Procedures', specialty: 'Diabetic Foot Care', fee: 'Rs. 500' },
+      { name: 'DPM. Habib', specialty: 'Podiatrist - Footcare', fee: 'Rs. 800' },
     ],
   },
 
@@ -53,8 +54,8 @@ const doctorCategories = [
     color: 'bg-[#3F4A7A]',
     doctors: [
       { name: 'Dr. Faisal Hayat', specialty: 'Dental Consultation', fee: 'Rs. 500' },
-      { name: 'Dr. Ayesha', specialty: 'Dental Consultation', fee: 'Rs. 500' },
-      { name: 'Dr. Hira', specialty: 'Dental Consultation', fee: 'Rs. 500' },
+      { name: 'Dr. Ayesha Khan', specialty: 'Dental Consultation', fee: 'Rs. 500' },
+      { name: 'Dr. Hira Khan', specialty: 'Dental Consultation', fee: 'Rs. 500' },
     ],
   },
 ]

@@ -22,7 +22,7 @@ export function FundraisingCampaigns() {
           {[
             { icon: TrendingUp, title: 'Diabetes Awareness Month', goal: 'PKR 500,000', raised: '65%' },
             { icon: Target, title: 'New Equipment Fund', goal: 'PKR 1,000,000', raised: '42%' },
-            { icon: Users, title: 'Community Camps 2024', goal: 'PKR 750,000', raised: '78%' },
+            { icon: Users, title: 'Community Camps 2026', goal: 'PKR 60,000,000', raised: '23%' },
           ].map((campaign, index) => (
             <div
               key={campaign.title}

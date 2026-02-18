@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useScrollReveal } from '@/hooks/use-scroll-reveal'
 import { Input } from '@/components/ui/input'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -9,18 +10,21 @@ import { Button } from '@/components/ui/button'
 import { Search, Calendar, Phone, Star } from 'lucide-react'
 
 const doctors = [
-  { id: 1, name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', experience: '15+ years', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500' },
-  { id: 2, name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', experience: '12+ years', rating: 4.8, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500' },
-  { id: 3, name: 'Dr. Ghulam', specialty: 'Diabetes', experience: '18+ years', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500' },
-  { id: 4, name: 'Dr. Shazia', specialty: 'Dermatology', experience: '10+ years', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000' },
-  { id: 5, name: 'Dr. Talat Naz', specialty: 'Gynaecology', experience: '12+ years', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200' },
-  { id: 6, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', experience: '20+ years', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500' },
-  { id: 7, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', experience: '8+ years', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500' },
-  { id: 8, name: 'Dr. Sohail', specialty: 'Ophthalmology', experience: '8+ years', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500' },
-  { id: 9, name: 'Dr. Faisal Hayat', specialty: 'Dental', experience: '10+ years', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500' },
-  { id: 10, name: 'Dr. Ayesha', specialty: 'Dental', experience: '8+ years', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 500' },
-  { id: 11, name: 'Dr. Hira', specialty: 'Dental', experience: '7+ years', rating: 4.6, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500' },
-  { id: 12, name: 'Dr. Rooh ul Muqim', specialty: 'General Surgery', experience: '15+ years', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200' },
+  { id: 1, name: 'Prof. Dr. Rooh ul Muqim', specialty: 'General Surgery', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/placeholder-user.jpg' },
+  { id: 2, name: 'Dr. Muhammad Jawad', specialty: 'Diabetes', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/placeholder-user.jpg' },
+  { id: 3, name: 'Dr. Abdul Jalil Khan', specialty: 'Diabetes', rating: 4.8, available: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], fee: 'Rs. 100-1500', image: '/placeholder-user.jpg' },
+  { id: 4, name: 'Dr. Ghulam Farooq', specialty: 'Diabetes, Endocrine', rating: 4.9, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1500', image: '/placeholder-user.jpg' },
+  { id: 5, name: 'Dr. Shazia Naz', specialty: 'Dermatology', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 1000', image: '/placeholder-user.jpg' },
+  { id: 6, name: 'Dr. Talat Naz', specialty: 'Gynaecology', rating: 4.8, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 1200', image: '/placeholder-user.jpg' },
+  { id: 7, name: 'Pro. Dr. Lal Muhammad Khattak', specialty: 'Ophthalmology', rating: 4.9, available: ['Mon', 'Tue', 'Wed', 'Thu'], fee: 'Rs. 1500', image: '/placeholder-user.jpg' },
+  { id: 8, name: 'Dr. Sadiya Hassan', specialty: 'Ophthalmology', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 9, name: 'Mr. Amir Sohail', specialty: 'Optometry', rating: 4.6, available: ['Mon', 'Wed', 'Fri', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 10, name: 'Mr. Sohail', specialty: 'Optometry', rating: 4.5, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 11, name: 'Dr. Faisal Hayat', specialty: 'Dental', rating: 4.7, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 12, name: 'Dr. Ayesha Khan', specialty: 'Dental', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 13, name: 'Dr. Hira Khan', specialty: 'Dental', rating: 4.6, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 500', image: '/placeholder-user.jpg' },
+  { id: 14, name: 'RD. Ghazala', specialty: 'Dietitian', rating: 4.7, available: ['Mon', 'Wed', 'Fri'], fee: 'Rs. 800', image: '/placeholder-user.jpg' },
+  { id: 15, name: 'DPM. Habib', specialty: 'Podiatrist - Footcare', rating: 4.8, available: ['Tue', 'Thu', 'Sat'], fee: 'Rs. 800', image: '/placeholder-user.jpg' },
 ]
 
 const specialties = [
@@ -29,8 +33,11 @@ const specialties = [
   'Dermatology',
   'Gynaecology',
   'Ophthalmology',
+  'Optometry',
   'Dental',
   'General Surgery',
+  'Dietitian',
+  'Podiatrist',
 ]
 
 export function FindDoctor() {
@@ -98,12 +105,13 @@ export function FindDoctor() {
               style={{ transitionDelay: `${(index + 4) * 100}ms` }}
             >
               {/* Doctor image placeholder */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-[#5F9ED1]/20 to-[#3F4A7A]/20 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-[#5F9ED1] rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                    {doctor.name.split(' ').slice(1).map(n => n[0]).join('')}
-                  </div>
-                </div>
+              <div className="aspect-[4/3] bg-gradient-to-br from-[#5F9ED1]/20 to-[#3F4A7A]/20 relative overflow-hidden">
+                <Image
+                  src={doctor.image}
+                  alt={doctor.name}
+                  fill
+                  className="object-cover"
+                />
                 {/* Rating badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
                   <Star className="w-4 h-4 text-yellow-500 fill-yellow-500" />
@@ -116,8 +124,7 @@ export function FindDoctor() {
                   {doctor.name}
                 </h3>
                 <p className="text-[#5F9ED1] text-sm font-medium">{doctor.specialty}</p>
-                <p className="text-[#8A8A8A] text-sm mt-1">{doctor.experience} experience</p>
-                <p className="text-[#3F4A7A] text-sm font-semibold mt-1">Fee: {doctor.fee}</p>
+                <p className="text-[#3F4A7A] text-sm font-semibold mt-2">Fee: {doctor.fee}</p>
                 
                 <div className="flex flex-wrap gap-1 mt-3">
                   {doctor.available.map((day) => (
