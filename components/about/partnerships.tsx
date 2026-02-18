@@ -9,7 +9,7 @@ const partners = [
   { name: 'National Bank Ltd', category: 'Banking', logo: '/images/Partners/National Bank Ltd Partner.png' },
   { name: 'Aitemad Banking', category: 'Financial Services', logo: '/images/Partners/images.jpeg' },
   { name: 'Martin Dow', category: 'Pharmaceutical', logo: '/images/Partners/Martin Dow Partner.png' },
-  { name: 'Merker', category: 'Healthcare', logo: '/images/Partners/MERKER.png' },
+  { name: 'Mercer', category: 'Healthcare', logo: '/images/Partners/MERCER.png' },
   { name: 'Al-Khidmat', category: 'Charitable Organization', logo: '/images/Partners/Al khidmat Partner.png' },
   { name: 'Meethi Zindagi', category: 'Diabetes Awareness', logo: '/images/Partners/meethi zindagi partner.jpg' },
   { name: 'Khyber Medical University', category: 'Academic', logo: '/images/Partners/kmu logo.jpeg' },
