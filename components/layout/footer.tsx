@@ -180,12 +180,14 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-[#1E3A52] py-4">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm text-center md:text-left">
+        <div className="container mx-auto px-4">
+          <p className="text-white/60 text-sm text-center mb-4">
             © {new Date().getFullYear()} Sugar Hospital - Diabetes General Hospital & Research Centre. All rights reserved.
           </p>
-          <div className="flex items-center gap-2">
-            <p className="text-white/60 text-sm">Made with care by</p>
+          
+          {/* Attribution - Centered above WhatsApp */}
+          <div className="flex justify-center items-center gap-2 mb-4">
+            <p className="text-white/60 text-sm">Made in collaboration with Axeom by</p>
             <a 
               href="https://blancos-hq-portfolio.vercel.app/" 
               target="_blank"
@@ -199,8 +201,8 @@ export function Footer() {
               </span>
             </a>
           </div>
-        </div>
-        <div className="container mx-auto px-4 mt-2">
+          
+          {/* WhatsApp Attribution */}
           <p className="text-white/40 text-xs text-center">
             WhatsApp icons created by <a href="https://www.flaticon.com/free-icons/whatsapp" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 underline">cobynecz - Flaticon</a>
           </p>
