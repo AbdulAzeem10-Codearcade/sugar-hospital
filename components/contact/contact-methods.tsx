@@ -160,15 +160,21 @@ export function ContactMethods() {
               <h3 className="text-lg font-bold text-[#3F4A7A] mb-2">{service.title}</h3>
               <p className="text-[#8A8A8A] text-sm mb-4">{service.description}</p>
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-[#5F9ED1] font-semibold">
+                <a 
+                  href={`tel:${service.contact.replace(/\s/g, '')}`}
+                  className="flex items-center gap-2 text-[#5F9ED1] font-semibold hover:underline"
+                >
                   <Phone className="w-4 h-4" />
                   <span>{service.contact}</span>
-                </div>
+                </a>
                 {service.email && (
-                  <div className="flex items-center gap-2 text-[#5F9ED1] font-semibold">
+                  <a 
+                    href={`mailto:${service.email}`}
+                    className="flex items-center gap-2 text-[#5F9ED1] font-semibold hover:underline"
+                  >
                     <Mail className="w-4 h-4" />
                     <span className="text-sm">{service.email}</span>
-                  </div>
+                  </a>
                 )}
               </div>
             </div>

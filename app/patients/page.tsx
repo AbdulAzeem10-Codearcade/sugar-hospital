@@ -1,7 +1,6 @@
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { PatientsHero } from '@/components/patients/patients-hero'
-import { AppointmentForm } from '@/components/patients/appointment-form'
 import { FindDoctor } from '@/components/patients/find-doctor'
 import { FindLabTest } from '@/components/patients/find-lab-test'
 import { AutismAllies } from '@/components/patients/autism-allies'
@@ -15,7 +14,6 @@ export default function PatientsPage() {
       <Header />
       <main className="flex-1">
         <PatientsHero />
-        <AppointmentForm />
         <FindDoctor />
         <FindLabTest />
         <AutismAllies />

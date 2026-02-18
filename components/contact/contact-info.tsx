@@ -76,7 +76,23 @@ export function ContactInfo() {
                     {detail.items.map((item, idx) => (
                       <div key={idx}>
                         <div className="text-sm text-[#8A8A8A] mb-1">{item.label}</div>
-                        <div className="text-base font-semibold text-[#3F4A7A]">{item.value}</div>
+                        {detail.title === 'Email Address' ? (
+                          <a 
+                            href={`mailto:${item.value}`}
+                            className="text-base font-semibold text-[#5F9ED1] hover:underline"
+                          >
+                            {item.value}
+                          </a>
+                        ) : detail.title === 'Phone Numbers' ? (
+                          <a 
+                            href={`tel:${item.value.replace(/\s/g, '')}`}
+                            className="text-base font-semibold text-[#3F4A7A] hover:text-[#5F9ED1] transition-colors"
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          <div className="text-base font-semibold text-[#3F4A7A]">{item.value}</div>
+                        )}
                       </div>
                     ))}
                   </div>
