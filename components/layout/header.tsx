@@ -19,7 +19,7 @@ const navigation = [
     href: '/about',
     children: [
       { name: 'Our Vision & Mission', href: '/about#vision-mission' },
-      { name: 'Our Story', href: '/about#our-story' },
+      { name: 'Our Journey', href: '/about#our-story' },
       { name: 'Our Leadership', href: '/about#leadership' },
       { name: 'Audit Reports', href: '/about#audit-reports' },
       { name: 'Community Outreach Camps', href: '/about/community-camps' },
@@ -45,6 +45,8 @@ const navigation = [
     children: [
       { name: 'Clinical Services', href: '/services#clinical' },
       { name: 'Diagnostic Services', href: '/services#diagnostic' },
+      { name: 'Doctor & Consultation Fees', href: '/services#doctors-fees' },
+      { name: 'Laboratory Test Fees', href: '/services#lab-fees' },
       { name: 'Pharmacy', href: '/services#pharmacy' },
     ],
   },
@@ -52,10 +54,10 @@ const navigation = [
     name: 'Healthcare Professionals',
     href: '/professionals',
     children: [
-      { name: 'Conference Presentations', href: '/professionals#conferences' },
       { name: 'Quality & Patient Safety', href: '/professionals#quality-policy' },
       { name: 'Awards & Recognitions', href: '/professionals#awards' },
       { name: 'Publications & Research', href: '/professionals#publications' },
+      { name: 'Conference Presentations', href: '/professionals#conferences' },
     ],
   },
   {
