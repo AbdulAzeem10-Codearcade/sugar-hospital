@@ -18,11 +18,6 @@ const facilityImages = [
     category: 'Facility'
   },
   {
-    src: '/images/sugar hospital equipment/CT SCAN 64 slice Phillips.png',
-    title: 'CT Scan 64 Slice Phillips',
-    category: 'Equipment'
-  },
-  {
     src: '/images/Sugar Hospital Staff/AIMS-Sugar-Hospital-Patients-Hallway.jpg',
     title: 'Patient Hallway',
     category: 'Facility'
