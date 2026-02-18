@@ -12,7 +12,7 @@ const suggestedDonations = [
   { item: 'Foot Care', description: 'One Patient / Month', amount: 'Rs 1,500' },
   { item: 'Dental Care', description: 'One Child / Month', amount: 'Rs 3,000' },
   { item: 'Children with Diabetes', description: 'One Adult / Month', amount: 'Rs 3,000' },
-  { item: 'AIMS Zakat', description: 'One Camp', amount: 'Rs 200,000 (2 Lac PKR)' },
+  { item: 'AIMS Medical Camp', description: 'One Camp / 100 Patients', amount: 'Rs 200,000 (2 Lac PKR)' },
 ]
 
 const donationAccounts = [
