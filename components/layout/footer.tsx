@@ -186,19 +186,37 @@ export function Footer() {
           </p>
           
           {/* Attribution - Centered above WhatsApp */}
-          <div className="flex justify-center items-center gap-2 mb-4">
-            <p className="text-white/60 text-sm">Made in collaboration with Axeom by</p>
+          <div className="flex flex-col items-center gap-3 mb-4">
+            <div className="flex items-center gap-2">
+              <p className="text-white/60 text-sm">Made in collaboration with Axeom by</p>
+              <a 
+                href="https://blancos-hq-portfolio.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative inline-block px-4 py-2 text-sm font-semibold text-white rounded-lg overflow-hidden group"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-[#5F9ED1] via-[#A34C55] to-[#5F9ED1] animate-gradient-x"></span>
+                <span className="absolute inset-[2px] bg-[#1E3A52] rounded-lg"></span>
+                <span className="relative z-10 bg-gradient-to-r from-[#5F9ED1] to-[#A34C55] bg-clip-text text-transparent group-hover:from-[#A34C55] group-hover:to-[#5F9ED1] transition-all duration-300">
+                  BlancosHQ
+                </span>
+              </a>
+            </div>
+            
+            {/* BlancosHQ Logo */}
             <a 
               href="https://blancos-hq-portfolio.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-block px-4 py-2 text-sm font-semibold text-white rounded-lg overflow-hidden group"
+              className="hover:opacity-80 transition-opacity"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-[#5F9ED1] via-[#A34C55] to-[#5F9ED1] animate-gradient-x"></span>
-              <span className="absolute inset-[2px] bg-[#1E3A52] rounded-lg"></span>
-              <span className="relative z-10 bg-gradient-to-r from-[#5F9ED1] to-[#A34C55] bg-clip-text text-transparent group-hover:from-[#A34C55] group-hover:to-[#5F9ED1] transition-all duration-300">
-                BlancosHQ
-              </span>
+              <Image
+                src="/images/BlancosHQ-Logo2.png"
+                alt="BlancosHQ Logo"
+                width={120}
+                height={40}
+                className="object-contain"
+              />
             </a>
           </div>
           
