@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
       <head>
-        <link rel="icon" href="/images/Sugar hospital building images/SGH image.jpg" />
+        <link rel="icon" href="/images/sugar-hospital-logo.png" />
       </head>
       <body className="font-sans antialiased">
         <LoadingScreen />

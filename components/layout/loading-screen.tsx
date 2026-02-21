@@ -54,13 +54,13 @@ export function LoadingScreen() {
           </svg>
 
           {/* Hospital Logo */}
-          <div className="absolute inset-0 flex items-center justify-center p-8">
+          <div className="absolute inset-0 flex items-center justify-center p-6">
             <Image
-              src="/images/Sugar hospital building images/SGH image.jpg"
+              src="/images/sugar-hospital-logo.png"
               alt="Sugar Hospital"
-              width={120}
-              height={120}
-              className="object-contain rounded-full"
+              width={140}
+              height={140}
+              className="object-contain"
               priority
             />
           </div>
