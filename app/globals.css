@@ -547,3 +547,17 @@
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
+
+/* Loading Screen Animation */
+@keyframes loading-circle {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-loading-circle {
+  animation: loading-circle 2.5s ease-in-out forwards;
+}

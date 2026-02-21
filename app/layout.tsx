@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Merriweather } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { WhatsAppFloat } from '@/components/layout/whatsapp-float'
+import { LoadingScreen } from '@/components/layout/loading-screen'
 import './globals.css'
 
 const inter = Inter({ 
@@ -45,7 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
+      <head>
+        <link rel="icon" href="/images/Sugar hospital building images/SGH image.jpg" />
+      </head>
       <body className="font-sans antialiased">
+        <LoadingScreen />
         {children}
         <WhatsAppFloat />
         <Analytics />
